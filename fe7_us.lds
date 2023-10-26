@@ -24,6 +24,8 @@ SECTIONS
         src/crt0.o(.text);
         src/armfunc.o(.text);
         asm/code.o(.text);
+        src/mode_select.o(.text);
+        asm/code_80A867C.o(.text);
         src/m4a_1.o(.text);
         src/m4a.o(.text);
         src/gbasvc.o(.text);
@@ -84,8 +86,10 @@ SECTIONS
     .rodata : ALIGN(4)
     {
         . = ALIGN(4); asm/rodata.o(.rodata);
+        . = ALIGN(4); src/mode_select.o(.rodata);
+        . = ALIGN(4); asm/rodata_8418DF0.o(.rodata);
         . = ALIGN(4); src/m4a.o(.rodata);
-        . = ALIGN(4); asm/rodata.o(.rodata_2);
+        . = ALIGN(4); asm/rodata_8418DF0.o(.rodata_2);
         . = ALIGN(4); *libc.a:vfprintf.o(.rodata);
         . = ALIGN(4); *libc.a:dtoa.o(.rodata);
         . = ALIGN(4); *libc.a:impure.o(.rodata);
@@ -119,6 +123,7 @@ SECTIONS
 
         /* COMMON */
         . = 0x002860; gOamLoPutIt = .;
+        . = 0x002870; gDispIo = .;
         . = 0x0028E0; IntrFuncTable = .;
         . = 0x002F34; gOamHiPutIt = .;
         . = 0x0041E0; gWorkingMap = .;
@@ -140,6 +145,13 @@ SECTIONS
 
     .ewram_data (NOLOAD) : ALIGN(4)
     {
+        . = 0x000000; gUnk_02000000 = .;
+        . = 0x000001; gUnk_02000001 = .;
+        . = 0x0000A4; gUnk_020000A4 = .;
+        . = 0x01E8D4; gUnk_0201E8D4 = .;
+        . = 0x01E97C; gUnk_0201E97C = .;
+        . = 0x01E9F4; gUnk_0201E9F4 = .;
+
         . = 0x020140; /* begin (before that is ewram overlay) */
 
         . = ALIGN(4); src/hardware.o(ewram_data);

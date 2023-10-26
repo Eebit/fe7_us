@@ -210,4 +210,22 @@ enum
 #define TIMER_INTR_ENABLE 0x40
 #define TIMER_ENABLE 0x80
 
+enum
+{
+    KEY_BUTTON_A      = (1 << 0),
+    KEY_BUTTON_B      = (1 << 1),
+    KEY_BUTTON_SELECT = (1 << 2),
+    KEY_BUTTON_START  = (1 << 3),
+    KEY_DPAD_RIGHT    = (1 << 4),
+    KEY_DPAD_LEFT     = (1 << 5),
+    KEY_DPAD_UP       = (1 << 6),
+    KEY_DPAD_DOWN     = (1 << 7),
+    KEY_BUTTON_R      = (1 << 8),
+    KEY_BUTTON_L      = (1 << 9),
+
+    KEY_ANY           = (1 << 10) - 1,
+    KEY_DPAD_ANY      = KEY_DPAD_RIGHT + KEY_DPAD_LEFT + KEY_DPAD_UP + KEY_DPAD_DOWN,
+    KEY_BUTTON_ANY    = KEY_ANY &~ KEY_DPAD_ANY,
+};
+
 #endif // GBAIO_H

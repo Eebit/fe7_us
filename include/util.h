@@ -15,4 +15,6 @@ struct PalFadeStatus
 
 extern struct PalFadeStatus gPalFadeStatus[0x20];
 
+void Decompress(void const * src, void * dst);
+
 #endif // UTIL_H

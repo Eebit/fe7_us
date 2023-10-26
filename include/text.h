@@ -37,4 +37,8 @@ struct SpecialCharEnt
     /* 02 */ i16 chr_position;
 };
 
+void func_08005AD4(struct Text * text, u16 * tm, i32 color, i32 x, i32 tile_width, const char * str);
+const char * GetMsg(i32);
+void ClearText(struct Text * text);
+
 #endif // TEXT_H

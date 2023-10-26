@@ -105,4 +105,9 @@ enum
 
 extern Proc * gProcTreeRoots[PROC_TREE_COUNT];
 
+Proc * SpawnProcLocking(struct ProcScr *, Proc *);
+void Proc_Break(Proc * proc);
+Proc * Proc_Find(struct ProcScr const * script);
+void Proc_Goto(void * proc, i32 label);
+
 #endif // PROC_H

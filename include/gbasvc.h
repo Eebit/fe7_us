@@ -108,4 +108,6 @@ enum
 
 #define CpuFastCopy(src, dest, size) CpuFastSet(src, dest, ((size) / (32 / 8) & 0x1FFFFF))
 
+/* svc 06 */ i32 Div(i32, i32);
+
 #endif // GBASVC_H
