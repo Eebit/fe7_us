@@ -213,8 +213,8 @@ void func_080A75F0(void)
     ClearText(&gUnk_020000A4.text[5]);
     ClearText(&gUnk_020000A4.text[6]);
 
-    func_08005AD4(&gUnk_020000A4.text[5], gBg1Tm + 0xCE, 0, 0, 0, GetMsg(gUnk_08CE48C0[3][0]));
-    func_08005AD4(&gUnk_020000A4.text[6], gBg1Tm + 0x14E, 0, 0, 0, GetMsg(gUnk_08CE48C0[3][2]));
+    PutDrawText(&gUnk_020000A4.text[5], gBg1Tm + 0xCE, 0, 0, 0, GetMsg(gUnk_08CE48C0[3][0]));
+    PutDrawText(&gUnk_020000A4.text[6], gBg1Tm + 0x14E, 0, 0, 0, GetMsg(gUnk_08CE48C0[3][2]));
 
     EnableBgSync(2);
 
@@ -227,8 +227,8 @@ void func_080A7668(int index)
     ClearText(&gUnk_020000A4.text[3]);
     ClearText(&gUnk_020000A4.text[4]);
 
-    func_08005AD4(&gUnk_020000A4.text[2], gBg1Tm + 0x10E, 2, 0, 0, GetMsg(gUnk_08CE48C0[index][0]));
-    func_08005AD4(&gUnk_020000A4.text[4], gBg1Tm + 0x153, 2, 0, 0, GetMsg(gUnk_08CE48C0[index][2]));
+    PutDrawText(&gUnk_020000A4.text[2], gBg1Tm + 0x10E, 2, 0, 0, GetMsg(gUnk_08CE48C0[index][0]));
+    PutDrawText(&gUnk_020000A4.text[4], gBg1Tm + 0x153, 2, 0, 0, GetMsg(gUnk_08CE48C0[index][2]));
 
     EnableBgSync(2);
 
@@ -242,7 +242,7 @@ void func_080A76F8(struct ModeSelectProc * proc)
     ClearText(&gUnk_020000A4.text[0]);
     ClearText(&gUnk_020000A4.text[1]);
 
-    func_08005AD4(&gUnk_020000A4.text[0], gBg1Tm + 0x18f, selected_difficulty == 0 ? 3 : 1, 0, 0, GetMsg(0x12ba));
+    PutDrawText(&gUnk_020000A4.text[0], gBg1Tm + 0x18f, selected_difficulty == 0 ? 3 : 1, 0, 0, GetMsg(0x12ba));
 
     EnableBgSync(2);
 
@@ -273,7 +273,7 @@ void func_080A76F8(struct ModeSelectProc * proc)
             break;
     }
 
-    func_08005AD4(&gUnk_020000A4.text[1], gBg1Tm + 0x1CF, selected_difficulty == 1 ? 3 : 1, 0, 0, GetMsg(0x12bb));
+    PutDrawText(&gUnk_020000A4.text[1], gBg1Tm + 0x1CF, selected_difficulty == 1 ? 3 : 1, 0, 0, GetMsg(0x12bb));
 
     return;
 }
@@ -286,8 +286,8 @@ void * func_080A77C0(int index)
         0x0C  // FID_HECTOR
     };
 
-    Proc * pFaceProc = func_08007BCC(0, gUnk_08418DB4[index], 204, 72, FACE_DISP_HLAYER(1) | FACE_96x80);
-    func_0800751C(pFaceProc);
+    Proc * pFaceProc = StartFace2(0, gUnk_08418DB4[index], 204, 72, FACE_DISP_HLAYER(1) | FACE_96x80);
+    StartFaceFadeIn(pFaceProc);
 
     return pFaceProc;
 }
@@ -368,13 +368,13 @@ void func_080A7890(int a, int b)
         ble .L080A78A4\n\
         movs r4, #0x40\n\
     .L080A78A4:\n\
-        ldr r0, .L080A78DC @ =0x02000001\n\
+        ldr r0, .L080A78DC @ =gUnk_02000001\n\
         ldrb r0, [r0]\n\
         subs r0, #0xa\n\
         lsls r0, r0, #1\n\
         adds r4, r4, r0\n\
         lsls r0, r2, #4\n\
-        ldr r1, .L080A78E0 @ =0x0201E9F4\n\
+        ldr r1, .L080A78E0 @ =gUnk_0201E9F4\n\
         subs r0, r0, r2\n\
         movs r2, #0x1f\n\
         mov ip, r2\n\
@@ -398,8 +398,8 @@ void func_080A7890(int a, int b)
         b .L080A78E6\n\
         .align 2, 0\n\
     .L080A78D8: .4byte 0x02022A62\n\
-    .L080A78DC: .4byte 0x02000001\n\
-    .L080A78E0: .4byte 0x0201E9F4\n\
+    .L080A78DC: .4byte gUnk_02000001\n\
+    .L080A78E0: .4byte gUnk_0201E9F4\n\
     .L080A78E4:\n\
         movs r1, #0x1f\n\
     .L080A78E6:\n\
@@ -527,20 +527,20 @@ void func_080A79A4(struct ModeSelectSpriteDrawProc * proc)
 
     if (proc->unk_4e & 2)
     {
-        func_0804A1E8(0x6c, (proc->unk_4d & 1) * 0x10 + 0x68, 0xbc0);
+        PutFrozenUiHandExt(0x6c, (proc->unk_4d & 1) * 0x10 + 0x68, 0xbc0);
     }
     else
     {
-        func_0804A174(0x6c, proc->unk_4d * 0x10 + 0x68, 0xbc0);
+        PutUiHandExt(0x6c, proc->unk_4d * 0x10 + 0x68, 0xbc0);
     }
 
-    func_08006A34(0xd, 0, 8, gUnk_08CE483C, 0xb000);
-    func_08006A34(0xd, 0x14, 0x1c, gUnk_08CE4856, 0xb000);
-    func_08006A34(0xd, 0x28, 0x40, gUnk_08CE489C, 0xb000);
+    PutSpriteExt(0xd, 0, 8, gUnk_08CE483C, 0xb000);
+    PutSpriteExt(0xd, 0x14, 0x1c, gUnk_08CE4856, 0xb000);
+    PutSpriteExt(0xd, 0x28, 0x40, gUnk_08CE489C, 0xb000);
 
     if ((proc->unk_2c >> 2 & 1) == 0)
     {
-        func_08006A34(0xd, 8, 0x82, gUnk_08CE487C, 0xb000);
+        PutSpriteExt(0xd, 8, 0x82, gUnk_08CE487C, 0xb000);
     }
 
     if (proc->unk_2c != 0)
@@ -548,7 +548,7 @@ void func_080A79A4(struct ModeSelectSpriteDrawProc * proc)
         proc->unk_2c++;
     }
 
-    func_08006A34(0xd, 0x6c, 0x18, gUnk_08CE48A4, 0xa000);
+    PutSpriteExt(0xd, 0x6c, 0x18, gUnk_08CE48A4, 0xa000);
 
     func_080A73F8(proc->unk_30);
     proc->unk_30++;
@@ -939,7 +939,7 @@ void func_080A7C84(struct ModeSelectProc * proc)
         bl func_080A8D70\n\
         movs r0, #3\n\
         bl func_080A8D54\n\
-        ldr r4, .L080A8044 @ =0x020000A4\n\
+        ldr r4, .L080A8044 @ =gUnk_020000A4\n\
         ldr r1, .L080A8048 @ =0x0600E000\n\
         movs r0, #0x80\n\
         lsls r0, r0, #1\n\
@@ -1011,7 +1011,7 @@ void func_080A7C84(struct ModeSelectProc * proc)
         bl EnableBgSync\n\
         str r4, [r6, #0x2c]\n\
         str r4, [r6, #0x50]\n\
-        ldr r3, .L080A804C @ =0x03002870\n\
+        ldr r3, .L080A804C @ =gDispIo\n\
         movs r0, #0x20\n\
         ldrb r1, [r3, #1]\n\
         orrs r0, r1\n\
@@ -1111,7 +1111,7 @@ void func_080A7C84(struct ModeSelectProc * proc)
         adds r1, r6, #0\n\
         adds r2, r5, #0\n\
         adds r3, r4, #0\n\
-        bl func_08003388\n\
+        bl SetObjAffine\n\
         add sp, #0x10\n\
         pop {r3, r4, r5}\n\
         mov r8, r3\n\
@@ -1121,9 +1121,9 @@ void func_080A7C84(struct ModeSelectProc * proc)
         pop {r0}\n\
         bx r0\n\
         .align 2, 0\n\
-    .L080A8044: .4byte 0x020000A4\n\
+    .L080A8044: .4byte gUnk_020000A4\n\
     .L080A8048: .4byte 0x0600E000\n\
-    .L080A804C: .4byte 0x03002870\n\
+    .L080A804C: .4byte gDispIo\n\
     .L080A8050: .4byte gSinLut\n\
         .syntax divided\n\
     ");
@@ -1287,7 +1287,7 @@ void func_080A817C(struct ModeSelectProc * proc)
         }
         else
         {
-            func_080A4E34(proc->unk_49[proc->unk_41], proc->selected_difficulty[proc->unk_41]);
+            SaveMenu_SetDifficultyChoice(proc->unk_49[proc->unk_41], proc->selected_difficulty[proc->unk_41]);
             func_080A7C24(proc->selected_difficulty[proc->unk_41], proc->unk_42 | 2);
         }
 
@@ -1302,7 +1302,7 @@ void func_080A817C(struct ModeSelectProc * proc)
 
         PlaySe(0x38b);
         Proc_Goto(proc, 4);
-        func_080A4E34(3, 0);
+        SaveMenu_SetDifficultyChoice(3, 0);
     }
 
     proc->unk_50++;
@@ -1416,7 +1416,7 @@ void func_080A84F8(struct ModeSelectProc * proc)
     }
 
     // clang-format off
-    func_08003388(
+    SetObjAffine(
         0,
         Div(+COS_Q12(0) * 16, var_1),
         Div(-SIN_Q12(0) * 16, var_1),
@@ -1434,7 +1434,7 @@ void func_080A8624(struct ModeSelectProc * proc)
 {
     func_080A75CC(proc->unk_4c);
     func_08054EA8();
-    func_08006D50(0);
+    EndFaceById(0);
 
     if (!(proc->unk_42 & 1))
     {

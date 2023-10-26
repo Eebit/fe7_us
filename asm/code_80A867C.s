@@ -718,7 +718,7 @@ func_080A8B28: @ 0x080A8B28
     adds r0, r4, r0
     str r0, [sp]
     movs r0, #0xd
-    bl func_08006A34
+    bl PutSpriteExt
 .L080A8BE2:
     ldr r0, [r5, #0x30]
     movs r1, #2
@@ -743,7 +743,7 @@ func_080A8B28: @ 0x080A8B28
     adds r0, r4, r0
     str r0, [sp]
     movs r0, #0xd
-    bl func_08006A34
+    bl PutSpriteExt
 .L080A8C14:
     ldr r0, [r5, #0x2c]
     cmp r0, #1
@@ -797,7 +797,7 @@ func_080A8B28: @ 0x080A8B28
     movs r0, #0xd
     adds r1, r7, #0
     mov r2, r8
-    bl func_08006A34
+    bl PutSpriteExt
 .L080A8C7C:
     ldr r0, [r5, #0x30]
     movs r1, #2
@@ -826,7 +826,7 @@ func_080A8B28: @ 0x080A8B28
     str r0, [sp]
     movs r0, #0xd
     mov r2, sl
-    bl func_08006A34
+    bl PutSpriteExt
 .L080A8CB6:
     add sp, #4
     pop {r3, r4, r5}
@@ -1140,7 +1140,7 @@ func_080A8E44: @ 0x080A8E44
     movs r0, #0xd
     mov r2, ip
     ldr r3, .L080A8FD4 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0
     ldrsh r1, [r6, r0]
     mov r2, sb
@@ -1161,7 +1161,7 @@ func_080A8E44: @ 0x080A8E44
     movs r0, #0xd
     mov r2, ip
     ldr r3, .L080A8FD4 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r3, #0xc0
     lsls r3, r3, #6
     adds r1, r3, #0
@@ -1187,7 +1187,7 @@ func_080A8E44: @ 0x080A8E44
     movs r0, #0xd
     mov r2, ip
     ldr r3, .L080A8FD4 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0
     ldrsh r1, [r6, r0]
     mov r2, sb
@@ -1215,7 +1215,7 @@ func_080A8E44: @ 0x080A8E44
     str r0, [sp]
     movs r0, #0xd
     ldr r3, .L080A8FD4 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     mov r7, sb
     movs r0, #0
     ldrsb r0, [r7, r0]
@@ -1249,7 +1249,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A8FD8 @ =0x08B90608
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     subs r4, #4
     cmp r4, #3
@@ -1270,7 +1270,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A9080 @ =0x08B905E8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x10
     subs r4, #2
 .L080A8FFA:
@@ -1290,7 +1290,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A9084 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     subs r4, #1
     cmp r4, #0
@@ -1336,7 +1336,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A9088 @ =0x08B90608
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     subs r4, #4
     cmp r4, #3
@@ -1358,7 +1358,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A9134 @ =0x08B905E8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x10
     subs r4, #2
 .L080A90AA:
@@ -1378,7 +1378,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A9138 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     subs r4, #1
     cmp r4, #0
@@ -1427,7 +1427,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A913C @ =0x08B90608
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     subs r4, #4
     cmp r4, #3
@@ -1447,7 +1447,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A91A4 @ =0x08B905E8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x10
     subs r4, #2
 .L080A915A:
@@ -1465,7 +1465,7 @@ func_080A8E44: @ 0x080A8E44
     adds r1, r5, #0
     adds r2, r7, #0
     ldr r3, .L080A91A8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     subs r4, #1
     cmp r4, #0
@@ -1784,7 +1784,7 @@ func_080A9364: @ 0x080A9364
     adds r4, r0, r4
     str r4, [sp]
     movs r0, #4
-    bl func_08006A34
+    bl PutSpriteExt
     movs r4, #1
     ldrh r1, [r5, #0x38]
     cmp r4, r1
@@ -1807,7 +1807,7 @@ func_080A9364: @ 0x080A9364
     str r0, [sp]
     movs r0, #4
     ldr r3, .L080A9430 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r4, #1
     ldrh r0, [r5, #0x38]
     cmp r4, r0
@@ -1831,7 +1831,7 @@ func_080A9364: @ 0x080A9364
     adds r0, #2
     str r0, [sp]
     movs r0, #4
-    bl func_08006A34
+    bl PutSpriteExt
     add sp, #4
     pop {r4, r5}
     pop {r0}
@@ -2059,7 +2059,7 @@ func_080A9594: @ 0x080A9594
 
     thumb_func_start func_080A95B4
 func_080A95B4: @ 0x080A95B4
-    ldr r2, .L080A95D4 @ =0x03002870
+    ldr r2, .L080A95D4 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -2076,12 +2076,12 @@ func_080A95B4: @ 0x080A95B4
     strb r0, [r2, #1]
     bx lr
     .align 2, 0
-.L080A95D4: .4byte 0x03002870
+.L080A95D4: .4byte gDispIo
     func_end func_080A95B4
 
     thumb_func_start func_080A95D8
 func_080A95D8: @ 0x080A95D8
-    ldr r2, .L080A95F4 @ =0x03002870
+    ldr r2, .L080A95F4 @ =gDispIo
     movs r0, #1
     ldrb r1, [r2, #1]
     orrs r0, r1
@@ -2096,7 +2096,7 @@ func_080A95D8: @ 0x080A95D8
     strb r0, [r2, #1]
     bx lr
     .align 2, 0
-.L080A95F4: .4byte 0x03002870
+.L080A95F4: .4byte gDispIo
     func_end func_080A95D8
 
     thumb_func_start func_080A95F8
@@ -2159,7 +2159,7 @@ func_080A960C: @ 0x080A960C
     mov r3, r8
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2178,7 +2178,7 @@ func_080A960C: @ 0x080A960C
     mov r3, r8
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2202,7 +2202,7 @@ func_080A960C: @ 0x080A960C
     mov r3, r8
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     ldr r1, .L080A98B4 @ =0x000001FF
     ldrh r2, [r5, #2]
@@ -2221,7 +2221,7 @@ func_080A960C: @ 0x080A960C
     mov r3, r8
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r7, #1
     ldrb r0, [r5, #6]
     subs r0, #4
@@ -2246,7 +2246,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2266,7 +2266,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     adds r7, #4
     ldrb r0, [r5, #6]
     subs r0, #4
@@ -2296,7 +2296,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2316,7 +2316,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     adds r7, #2
     ldrb r0, [r5, #6]
     subs r0, #2
@@ -2346,7 +2346,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2366,7 +2366,7 @@ func_080A960C: @ 0x080A960C
     ands r2, r3
     str r6, [sp]
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     adds r7, #1
     ldrb r0, [r5, #6]
     subs r0, #1
@@ -2401,7 +2401,7 @@ func_080A960C: @ 0x080A960C
     ldr r3, [sp, #8]
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     ldrb r0, [r5, #1]
     movs r2, #2
     ldrsh r1, [r5, r2]
@@ -2422,7 +2422,7 @@ func_080A960C: @ 0x080A960C
     ldr r3, [sp, #8]
     str r3, [sp]
     ldr r3, .L080A98B8 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r6, #1
     ldrb r0, [r5, #6]
     subs r0, #4
@@ -2446,7 +2446,7 @@ func_080A960C: @ 0x080A960C
     adds r3, #5
     str r3, [sp]
     ldr r3, .L080A98BC @ =0x08B90608
-    bl func_08006A34
+    bl PutSpriteExt
     adds r6, #4
     ldrb r0, [r5, #6]
     subs r0, #4
@@ -2475,7 +2475,7 @@ func_080A960C: @ 0x080A960C
     adds r3, #5
     str r3, [sp]
     ldr r3, .L080A98F4 @ =0x08B905E8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r6, #2
 .L080A98EA:
     ldrb r0, [r5, #6]
@@ -2502,7 +2502,7 @@ func_080A960C: @ 0x080A960C
     adds r3, #5
     str r3, [sp]
     ldr r3, .L080A9948 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r6, #1
 .L080A991E:
     ldrb r0, [r5, #6]
@@ -2731,7 +2731,7 @@ func_080A9A34: @ 0x080A9A34
     mov r4, sb
     ldrh r4, [r4]
     str r4, [sp]
-    bl func_08006A34
+    bl PutSpriteExt
     adds r6, #0x20
 .L080A9AC2:
     ldrb r0, [r7]
@@ -2751,7 +2751,7 @@ func_080A9A34: @ 0x080A9A34
     ldrh r1, [r4]
     str r1, [sp]
     adds r1, r6, #0
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r0, [sp, #0x28]
     ldrb r3, [r0]
     adds r0, r3, #0
@@ -2775,7 +2775,7 @@ func_080A9A34: @ 0x080A9A34
     ldrh r1, [r7]
     str r1, [sp]
     adds r1, r6, #0
-    bl func_08006A34
+    bl PutSpriteExt
     b .L080A9B50
     .align 2, 0
 .L080A9B1C: .4byte 0x08418DF8
@@ -2801,7 +2801,7 @@ func_080A9A34: @ 0x080A9A34
     ldrh r1, [r1]
     str r1, [sp]
     adds r1, r6, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080A9B50:
     ldr r7, [sp, #0x28]
     adds r7, #8
@@ -3743,7 +3743,7 @@ PaletteFadeInOut_DispDisable: @ 0x080AA218
     ldr r0, .L080AA240 @ =0x0000FFFF
     cmp r1, r0
     bne .L080AA248
-    ldr r2, .L080AA244 @ =0x03002870
+    ldr r2, .L080AA244 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -3760,9 +3760,9 @@ PaletteFadeInOut_DispDisable: @ 0x080AA218
     b .L080AA264
     .align 2, 0
 .L080AA240: .4byte 0x0000FFFF
-.L080AA244: .4byte 0x03002870
+.L080AA244: .4byte gDispIo
 .L080AA248:
-    ldr r2, .L080AA268 @ =0x03002870
+    ldr r2, .L080AA268 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -3780,7 +3780,7 @@ PaletteFadeInOut_DispDisable: @ 0x080AA218
     strb r0, [r2, #1]
     bx lr
     .align 2, 0
-.L080AA268: .4byte 0x03002870
+.L080AA268: .4byte gDispIo
     func_end PaletteFadeInOut_DispDisable
 
     thumb_func_start func_080AA26C
@@ -4856,30 +4856,30 @@ func_080AA9EC: @ 0x080AA9EC
     beq .L080AAA28
     b .L080AAA2C
 .L080AAA04:
-    ldr r0, .L080AAA0C @ =0x03002870
+    ldr r0, .L080AAA0C @ =gDispIo
     ldrh r0, [r0, #0x1c]
     b .L080AAA2C
     .align 2, 0
-.L080AAA0C: .4byte 0x03002870
+.L080AAA0C: .4byte gDispIo
 .L080AAA10:
-    ldr r0, .L080AAA18 @ =0x03002870
+    ldr r0, .L080AAA18 @ =gDispIo
     ldrh r0, [r0, #0x20]
     b .L080AAA2C
     .align 2, 0
-.L080AAA18: .4byte 0x03002870
+.L080AAA18: .4byte gDispIo
 .L080AAA1C:
-    ldr r0, .L080AAA24 @ =0x03002870
+    ldr r0, .L080AAA24 @ =gDispIo
     ldrh r0, [r0, #0x24]
     b .L080AAA2C
     .align 2, 0
-.L080AAA24: .4byte 0x03002870
+.L080AAA24: .4byte gDispIo
 .L080AAA28:
-    ldr r0, .L080AAA30 @ =0x03002870
+    ldr r0, .L080AAA30 @ =gDispIo
     ldrh r0, [r0, #0x28]
 .L080AAA2C:
     bx lr
     .align 2, 0
-.L080AAA30: .4byte 0x03002870
+.L080AAA30: .4byte gDispIo
     func_end func_080AA9EC
 
     thumb_func_start func_080AAA34
@@ -4898,30 +4898,30 @@ func_080AAA34: @ 0x080AAA34
     beq .L080AAA70
     b .L080AAA74
 .L080AAA4C:
-    ldr r0, .L080AAA54 @ =0x03002870
+    ldr r0, .L080AAA54 @ =gDispIo
     ldrh r0, [r0, #0x1e]
     b .L080AAA74
     .align 2, 0
-.L080AAA54: .4byte 0x03002870
+.L080AAA54: .4byte gDispIo
 .L080AAA58:
-    ldr r0, .L080AAA60 @ =0x03002870
+    ldr r0, .L080AAA60 @ =gDispIo
     ldrh r0, [r0, #0x22]
     b .L080AAA74
     .align 2, 0
-.L080AAA60: .4byte 0x03002870
+.L080AAA60: .4byte gDispIo
 .L080AAA64:
-    ldr r0, .L080AAA6C @ =0x03002870
+    ldr r0, .L080AAA6C @ =gDispIo
     ldrh r0, [r0, #0x26]
     b .L080AAA74
     .align 2, 0
-.L080AAA6C: .4byte 0x03002870
+.L080AAA6C: .4byte gDispIo
 .L080AAA70:
-    ldr r0, .L080AAA78 @ =0x03002870
+    ldr r0, .L080AAA78 @ =gDispIo
     ldrh r0, [r0, #0x2a]
 .L080AAA74:
     bx lr
     .align 2, 0
-.L080AAA78: .4byte 0x03002870
+.L080AAA78: .4byte gDispIo
     func_end func_080AAA34
 
     thumb_func_start func_080AAA7C
@@ -6763,7 +6763,7 @@ func_080AB79C: @ 0x080AB79C
     bl ApplySystemObjectsGraphics
     bl LoadUiFrameGraphics
     bl InitSystemTextFont
-    ldr r7, .L080ABA64 @ =0x03002870
+    ldr r7, .L080ABA64 @ =gDispIo
     movs r6, #1
     ldrb r2, [r7, #1]
     orrs r2, r6
@@ -7060,7 +7060,7 @@ func_080AB79C: @ 0x080AB79C
     pop {r0}
     bx r0
     .align 2, 0
-.L080ABA64: .4byte 0x03002870
+.L080ABA64: .4byte gDispIo
 .L080ABA68: .4byte gBg0Tm
 .L080ABA6C: .4byte gBg1Tm
 .L080ABA70: .4byte gBg2Tm
@@ -8311,7 +8311,7 @@ func_080AC3F8: @ 0x080AC3F8
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     movs r4, #0
     ldr r6, .L080AC4BC @ =0x0201EA98
     movs r5, #0x28
@@ -8329,7 +8329,7 @@ func_080AC3F8: @ 0x080AC3F8
     lsls r2, r2, #1
     add r2, sl
     ldr r3, .L080AC4C0 @ =0x08B905F8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     adds r4, #1
     cmp r4, #4
@@ -8380,7 +8380,7 @@ func_080AC4C4: @ 0x080AC4C4
     movs r0, #0
     mov r2, r8
     ldr r3, .L080AC548 @ =0x08B905B0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     adds r6, #1
     cmp r6, #2
@@ -8407,7 +8407,7 @@ func_080AC4C4: @ 0x080AC4C4
     str r0, [sp]
     movs r0, #0
     mov r2, r8
-    bl func_08006A34
+    bl PutSpriteExt
 .L080AC532:
     add sp, #4
     pop {r3, r4}
@@ -8482,7 +8482,7 @@ func_080AC588: @ 0x080AC588
     movs r0, #0
     adds r1, r6, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r1, r6, #0
     adds r1, #0x28
     ldr r0, .L080AC614 @ =0x08CE56BC
@@ -8493,14 +8493,14 @@ func_080AC588: @ 0x080AC588
     str r5, [sp]
     movs r0, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r1, r6, #0
     adds r1, #0x30
     ldr r3, .L080AC618 @ =0x08CE5662
     str r5, [sp]
     movs r0, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     mov r0, r8
     cmp r0, #9
     ble .L080AC61C
@@ -8515,7 +8515,7 @@ func_080AC588: @ 0x080AC588
     movs r0, #0
     adds r1, r4, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     b .L080AC62E
     .align 2, 0
 .L080AC610: .4byte 0x08CE5654
@@ -8529,7 +8529,7 @@ func_080AC588: @ 0x080AC588
     str r5, [sp]
     movs r0, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080AC62E:
     adds r5, r6, #0
     adds r5, #0x40
@@ -8546,7 +8546,7 @@ func_080AC588: @ 0x080AC588
     movs r0, #0
     adds r1, r5, #0
     adds r2, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     add sp, #4
     pop {r3, r4}
     mov r8, r3
@@ -8607,7 +8607,7 @@ func_080AC66C: @ 0x080AC66C
     str r0, [sp]
     movs r0, #0
     movs r1, #4
-    bl func_08006A34
+    bl PutSpriteExt
     adds r2, r4, #1
     ands r2, r5
     ldr r3, .L080AC770 @ =0x08CE562C
@@ -8616,7 +8616,7 @@ func_080AC66C: @ 0x080AC66C
     str r5, [sp]
     movs r0, #0
     movs r1, #0x88
-    bl func_08006A34
+    bl PutSpriteExt
     ldrh r1, [r6, #0x2c]
     lsls r0, r1, #5
     adds r0, r0, r1
@@ -8639,7 +8639,7 @@ func_080AC66C: @ 0x080AC66C
     str r5, [sp]
     movs r0, #0
     adds r2, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
     ldrh r2, [r6, #0x2c]
     movs r0, #0x3c
     adds r1, r4, #0
@@ -8909,7 +8909,7 @@ func_080AC904: @ 0x080AC904
     str r1, [r0, #0x58]
     ldr r0, .L080AC938 @ =0x08CE5734
     bl InitBgs
-    ldr r2, .L080AC93C @ =0x03002870
+    ldr r2, .L080AC93C @ =gDispIo
     movs r0, #8
     rsbs r0, r0, #0
     ldrb r1, [r2]
@@ -8930,7 +8930,7 @@ func_080AC904: @ 0x080AC904
     bx r0
     .align 2, 0
 .L080AC938: .4byte 0x08CE5734
-.L080AC93C: .4byte 0x03002870
+.L080AC93C: .4byte gDispIo
     func_end func_080AC904
 
     thumb_func_start func_080AC940
@@ -8980,7 +8980,7 @@ func_080AC940: @ 0x080AC940
     bl func_08001F3C
     movs r0, #8
     bl EnableBgSync
-    ldr r4, .L080ACA38 @ =0x03002870
+    ldr r4, .L080ACA38 @ =gDispIo
     movs r0, #0x21
     rsbs r0, r0, #0
     ldrb r1, [r4, #1]
@@ -9032,7 +9032,7 @@ func_080AC940: @ 0x080AC940
 .L080ACA2C: .4byte 0x0840FEB4
 .L080ACA30: .4byte gBg3Tm
 .L080ACA34: .4byte 0x08411F34
-.L080ACA38: .4byte 0x03002870
+.L080ACA38: .4byte gDispIo
     func_end func_080AC940
 
     thumb_func_start func_080ACA3C
@@ -9059,7 +9059,7 @@ func_080ACA48: @ 0x080ACA48
     movs r0, #4
     movs r1, #0x38
     movs r2, #8
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r1, .L080ACA8C @ =0x08CE456C
     ldr r0, [r4, #0x58]
     lsls r0, r0, #2
@@ -9071,7 +9071,7 @@ func_080ACA48: @ 0x080ACA48
     movs r0, #4
     movs r1, #0x40
     movs r2, #0x10
-    bl func_08006A34
+    bl PutSpriteExt
 .L080ACA80:
     add sp, #4
     pop {r4}
@@ -9120,7 +9120,7 @@ func_080ACABC: @ 0x080ACABC
     movs r0, #4
     movs r1, #0xc
     movs r2, #8
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r0, .L080ACAF4 @ =0x08CE45A8
     ldr r3, [r0]
     movs r0, #0x90
@@ -9129,7 +9129,7 @@ func_080ACABC: @ 0x080ACABC
     movs r0, #4
     movs r1, #0x18
     movs r2, #0x10
-    bl func_08006A34
+    bl PutSpriteExt
     add sp, #4
     pop {r0}
     bx r0
@@ -9224,7 +9224,7 @@ func_080ACB64: @ 0x080ACB64
     cmp r5, #0
     bne .L080ACBA4
     ldr r0, .L080ACBC0 @ =0x04000012
-    ldr r1, .L080ACBC4 @ =0x03002870
+    ldr r1, .L080ACBC4 @ =gDispIo
     ldrh r1, [r1, #0x1e]
     strh r1, [r0]
 .L080ACBA4:
@@ -9242,7 +9242,7 @@ func_080ACB64: @ 0x080ACB64
 .L080ACBB8: .4byte 0x04000050
 .L080ACBBC: .4byte 0x04000054
 .L080ACBC0: .4byte 0x04000012
-.L080ACBC4: .4byte 0x03002870
+.L080ACBC4: .4byte gDispIo
     func_end func_080ACB64
 
     thumb_func_start func_080ACBC8
@@ -9491,7 +9491,7 @@ func_080ACCF4: @ 0x080ACCF4
     mov r0, r8
     ldr r2, [sp, #0xc]
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     mov r0, sl
     adds r0, #0x16
     adds r5, r4, r0
@@ -9526,7 +9526,7 @@ func_080ACCF4: @ 0x080ACCF4
     mov r0, r8
     ldr r2, [sp, #0xc]
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     adds r0, r7, #0
     bl GetItemIcon
     adds r1, r0, #0
@@ -9727,7 +9727,7 @@ func_080ACF5C: @ 0x080ACF5C
     bl ApplySystemObjectsGraphics
     bl func_080ACAF8
     bl func_080ACF08
-    ldr r0, .L080AD190 @ =0x03002870
+    ldr r0, .L080AD190 @ =gDispIo
     mov ip, r0
     movs r0, #0x21
     rsbs r0, r0, #0
@@ -9943,7 +9943,7 @@ func_080ACF5C: @ 0x080ACF5C
 .L080AD184: .4byte 0x06008000
 .L080AD188: .4byte gBg3Tm
 .L080AD18C: .4byte 0x0840FA00
-.L080AD190: .4byte 0x03002870
+.L080AD190: .4byte gDispIo
 .L080AD194: .4byte 0x08CE5780
 .L080AD198: .4byte 0x08CE5784
 .L080AD19C: .4byte func_080ACABC
@@ -10357,7 +10357,7 @@ func_080AD49C: @ 0x080AD49C
     movs r1, #5
     movs r2, #0xb
     bl func_08049CE4
-    ldr r3, .L080AD5B0 @ =0x03002870
+    ldr r3, .L080AD5B0 @ =gDispIo
     movs r0, #0x20
     ldrb r1, [r3, #1]
     orrs r0, r1
@@ -10466,7 +10466,7 @@ func_080AD49C: @ 0x080AD49C
     b .L080AD5E8
     .align 2, 0
 .L080AD5AC: .4byte 0x08CE5784
-.L080AD5B0: .4byte 0x03002870
+.L080AD5B0: .4byte gDispIo
 .L080AD5B4: .4byte 0x02022C7A
 .L080AD5B8: .4byte 0x08CE5788
 .L080AD5BC: .4byte 0x0000125A
@@ -10722,7 +10722,7 @@ func_080AD7B4: @ 0x080AD7B4
     push {r4, lr}
     adds r4, r0, #0
     bl func_080AD484
-    ldr r2, .L080AD814 @ =0x03002870
+    ldr r2, .L080AD814 @ =gDispIo
     movs r0, #0x21
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -10760,7 +10760,7 @@ func_080AD7B4: @ 0x080AD7B4
     pop {r0}
     bx r0
     .align 2, 0
-.L080AD814: .4byte 0x03002870
+.L080AD814: .4byte gDispIo
 .L080AD818: .4byte gBg1Tm
 .L080AD81C: .4byte gBg0Tm
     func_end func_080AD7B4
@@ -10796,7 +10796,7 @@ func_080AD820: @ 0x080AD820
     ldr r0, [r0]
     adds r5, r0, #0
     adds r5, #0x70
-    ldr r2, .L080AD978 @ =0x03002870
+    ldr r2, .L080AD978 @ =gDispIo
     movs r0, #0x21
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -10916,7 +10916,7 @@ func_080AD820: @ 0x080AD820
 .L080AD96C: .4byte 0x08CE577C
 .L080AD970: .4byte 0x08CE5774
 .L080AD974: .4byte 0x08CE5784
-.L080AD978: .4byte 0x03002870
+.L080AD978: .4byte gDispIo
 .L080AD97C: .4byte gBg0Tm
 .L080AD980: .4byte gBg1Tm
 .L080AD984: .4byte 0x000010B3
@@ -10955,7 +10955,7 @@ func_080AD820: @ 0x080AD820
     movs r2, #0xa
     mov r3, sb
     bl func_08049B78
-    ldr r0, .L080ADA50 @ =0x03002870
+    ldr r0, .L080ADA50 @ =gDispIo
     mov ip, r0
     movs r0, #0x20
     mov r1, ip
@@ -11014,7 +11014,7 @@ func_080AD820: @ 0x080AD820
     .align 2, 0
 .L080ADA48: .4byte gPlayStatus
 .L080ADA4C: .4byte gBg1Tm
-.L080ADA50: .4byte 0x03002870
+.L080ADA50: .4byte gDispIo
 .L080ADA54: .4byte 0x0000FFFC
     func_end func_080AD820
 
@@ -11062,7 +11062,7 @@ func_080ADA90: @ 0x080ADA90
     bl func_080ACF08
     movs r0, #3
     bl EnableBgSync
-    ldr r2, .L080ADAD8 @ =0x03002870
+    ldr r2, .L080ADAD8 @ =gDispIo
     movs r0, #0x21
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -11081,7 +11081,7 @@ func_080ADA90: @ 0x080ADA90
     .align 2, 0
 .L080ADAD0: .4byte gBg0Tm
 .L080ADAD4: .4byte gBg1Tm
-.L080ADAD8: .4byte 0x03002870
+.L080ADAD8: .4byte gDispIo
     func_end func_080ADA90
 
     thumb_func_start func_080ADADC
@@ -11376,7 +11376,7 @@ func_080ADCC4: @ 0x080ADCC4
     str r3, [sp, #4]
     movs r2, #0
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     add sp, #8
     pop {r4, r5, r6}
     pop {r0}
@@ -11433,7 +11433,7 @@ func_080ADD34: @ 0x080ADD34
     adds r1, r5, #0
     movs r2, #0
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     add sp, #8
     pop {r3, r4}
     mov r8, r3
@@ -11728,7 +11728,7 @@ func_080ADFA0: @ 0x080ADFA0
     adds r0, #1
     strb r1, [r0]
     bl LoadUiFrameGraphics
-    ldr r7, .L080AE1BC @ =0x03002870
+    ldr r7, .L080AE1BC @ =gDispIo
     movs r4, #1
     ldrb r0, [r7, #1]
     orrs r0, r4
@@ -11925,7 +11925,7 @@ func_080ADFA0: @ 0x080ADFA0
 .L080AE1B0: .4byte gPlayStatus
 .L080AE1B4: .4byte 0x08CE583C
 .L080AE1B8: .4byte 0x08CE5868
-.L080AE1BC: .4byte 0x03002870
+.L080AE1BC: .4byte gDispIo
 .L080AE1C0: .4byte gBg0Tm
 .L080AE1C4: .4byte gBg1Tm
 .L080AE1C8: .4byte gBg2Tm
@@ -13389,7 +13389,7 @@ func_080AECB0: @ 0x080AECB0
 func_080AED04: @ 0x080AED04
     push {r4, r5, r6, lr}
     adds r6, r0, #0
-    ldr r4, .L080AED88 @ =0x03002870
+    ldr r4, .L080AED88 @ =gDispIo
     movs r0, #8
     rsbs r0, r0, #0
     ldrb r1, [r4]
@@ -13446,7 +13446,7 @@ func_080AED04: @ 0x080AED04
     pop {r0}
     bx r0
     .align 2, 0
-.L080AED88: .4byte 0x03002870
+.L080AED88: .4byte gDispIo
     func_end func_080AED04
 
     thumb_func_start func_080AED8C
@@ -13463,7 +13463,7 @@ func_080AED8C: @ 0x080AED8C
     bl func_080A9DC0
     movs r0, #1
     bl FadeBgmOut
-    ldr r2, .L080AEDEC @ =0x03002870
+    ldr r2, .L080AEDEC @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -13489,7 +13489,7 @@ func_080AED8C: @ 0x080AED8C
     .align 2, 0
 .L080AEDE4: .4byte 0x08CE4C50
 .L080AEDE8: .4byte 0x08CE4C80
-.L080AEDEC: .4byte 0x03002870
+.L080AEDEC: .4byte gDispIo
     func_end func_080AED8C
 
     thumb_func_start func_080AEDF0
@@ -13886,7 +13886,7 @@ func_080AEFA8: @ 0x080AEFA8
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     ldr r0, .L080AF0F4 @ =0x000001FF
     ldr r3, [sp, #0xc]
     ands r3, r0
@@ -13903,7 +13903,7 @@ func_080AEFA8: @ 0x080AEFA8
     adds r0, r6, r0
     str r0, [sp]
     movs r0, #4
-    bl func_08006A34
+    bl PutSpriteExt
 .L080AF0E0:
     add sp, #0x18
     pop {r3, r4, r5}
@@ -13968,7 +13968,7 @@ func_080AF0FC: @ 0x080AF0FC
 func_080AF154: @ 0x080AF154
     push {r4, r5, r6, lr}
     adds r6, r0, #0
-    ldr r3, .L080AF214 @ =0x03002870
+    ldr r3, .L080AF214 @ =gDispIo
     movs r0, #0x21
     rsbs r0, r0, #0
     ldrb r1, [r3, #1]
@@ -14055,7 +14055,7 @@ func_080AF154: @ 0x080AF154
     pop {r0}
     bx r0
     .align 2, 0
-.L080AF214: .4byte 0x03002870
+.L080AF214: .4byte gDispIo
 .L080AF218: .4byte 0x08420608
 .L080AF21C: .4byte 0x02000000
 .L080AF220: .4byte 0x06010000
@@ -14069,7 +14069,7 @@ func_080AF154: @ 0x080AF154
 func_080AF234: @ 0x080AF234
     push {r4, r5, lr}
     adds r4, r0, #0
-    ldr r0, .L080AF288 @ =0x03002870
+    ldr r0, .L080AF288 @ =gDispIo
     mov ip, r0
     mov r3, ip
     adds r3, #0x3c
@@ -14109,7 +14109,7 @@ func_080AF234: @ 0x080AF234
     pop {r0}
     bx r0
     .align 2, 0
-.L080AF288: .4byte 0x03002870
+.L080AF288: .4byte gDispIo
     func_end func_080AF234
 
     thumb_func_start func_080AF28C
@@ -14603,7 +14603,7 @@ func_080AF5FC: @ 0x080AF5FC
     movs r1, #0x74
     movs r2, #0x48
     adds r3, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r5, #0
     cmp r5, r8
     bge .L080AF686
@@ -14620,13 +14620,13 @@ func_080AF5FC: @ 0x080AF5FC
     adds r1, r4, #0
     movs r2, #0x48
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     str r7, [sp]
     movs r0, #4
     adds r1, r6, #0
     movs r2, #0x48
     mov r3, sb
-    bl func_08006A34
+    bl PutSpriteExt
     b .L080AF67C
     .align 2, 0
 .L080AF65C: .4byte 0x08CE6104
@@ -14636,13 +14636,13 @@ func_080AF5FC: @ 0x080AF5FC
     adds r1, r4, #0
     movs r2, #0x48
     ldr r3, .L080AF694 @ =0x08CE60FC
-    bl func_08006A34
+    bl PutSpriteExt
     str r7, [sp]
     movs r0, #4
     adds r1, r6, #0
     movs r2, #0x48
     ldr r3, .L080AF698 @ =0x08CE610C
-    bl func_08006A34
+    bl PutSpriteExt
 .L080AF67C:
     adds r6, #8
     subs r4, #8
@@ -14738,7 +14738,7 @@ func_080AF69C: @ 0x080AF69C
     str r0, [sp]
     movs r0, #4
     movs r2, #0x50
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
 .L080AF730:
     adds r6, #4
@@ -14751,7 +14751,7 @@ func_080AF69C: @ 0x080AF69C
     movs r0, #4
     movs r1, #0x90
     movs r2, #0x50
-    bl func_08006A34
+    bl PutSpriteExt
     add sp, #4
     pop {r3, r4, r5}
     mov r8, r3
@@ -14958,7 +14958,7 @@ func_080AF8C4: @ 0x080AF8C4
     push {r4, r5, r6, r7, lr}
     mov r7, r8
     push {r7}
-    ldr r0, .L080AF990 @ =0x03002870
+    ldr r0, .L080AF990 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -15057,7 +15057,7 @@ func_080AF8C4: @ 0x080AF8C4
     pop {r0}
     bx r0
     .align 2, 0
-.L080AF990: .4byte 0x03002870
+.L080AF990: .4byte gDispIo
 .L080AF994: .4byte 0x0000FFE0
 .L080AF998: .4byte 0x0000E0FF
     func_end func_080AF8C4
@@ -15128,7 +15128,7 @@ func_080AF99C: @ 0x080AF99C
     mov r0, r8
     movs r1, #0
     bl TmFill
-    ldr r5, .L080AFBE0 @ =0x03002870
+    ldr r5, .L080AFBE0 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r3, [r5, #1]
@@ -15323,7 +15323,7 @@ func_080AF99C: @ 0x080AF99C
 .L080AFBD4: .4byte gBg0Tm
 .L080AFBD8: .4byte gBg1Tm
 .L080AFBDC: .4byte gBg2Tm
-.L080AFBE0: .4byte 0x03002870
+.L080AFBE0: .4byte gDispIo
 .L080AFBE4: .4byte 0x08407440
 .L080AFBE8: .4byte 0x0841F524
 .L080AFBEC: .4byte gBg3Tm
@@ -15582,7 +15582,7 @@ func_080AFDFC: @ 0x080AFDFC
     movs r0, #0xb4
     strb r0, [r1]
 .L080AFE34:
-    ldr r2, .L080AFEE4 @ =0x03002870
+    ldr r2, .L080AFEE4 @ =gDispIo
     mov ip, r2
     movs r2, #1
     mov r1, ip
@@ -15669,7 +15669,7 @@ func_080AFDFC: @ 0x080AFDFC
     bl func_080A92F8
     b .L080AFEF0
     .align 2, 0
-.L080AFEE4: .4byte 0x03002870
+.L080AFEE4: .4byte gDispIo
 .L080AFEE8: .4byte func_080AFDC0
 .L080AFEEC:
     adds r0, r6, #4
@@ -16009,7 +16009,7 @@ func_080B0134: @ 0x080B0134
     adds r1, r4, #0
     adds r2, r7, #0
     adds r2, #0xf
-    bl func_08006A34
+    bl PutSpriteExt
     adds r4, #8
     subs r6, #1
     cmp r6, #0
@@ -16034,7 +16034,7 @@ func_080B0134: @ 0x080B0134
     lsls r0, r0, #7
     str r0, [sp]
     movs r0, #0xd
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B01C2:
     ldr r0, [sp, #0xc]
     mov sb, r0
@@ -16088,7 +16088,7 @@ func_080B0134: @ 0x080B0134
     lsls r0, r0, #7
     str r0, [sp]
     movs r0, #4
-    bl func_08006A34
+    bl PutSpriteExt
     movs r1, #4
     ldrsb r1, [r4, r1]
     subs r1, r6, r1
@@ -16102,7 +16102,7 @@ func_080B0134: @ 0x080B0134
     lsls r0, r0, #7
     str r0, [sp]
     movs r0, #4
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #5
     ldrsb r0, [r4, r0]
     movs r1, #4
@@ -18402,13 +18402,13 @@ func_080B1354: @ 0x080B1354
     ldr r1, .L080B1490 @ =func_0806DAB4
     bl Proc_ForEach
     bl func_080B1E28
-    ldr r0, .L080B1494 @ =0x03002870
+    ldr r0, .L080B1494 @ =gDispIo
     ldrb r1, [r0, #0xc]
     movs r2, #0xfc
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #0xc]
-    ldr r0, .L080B1494 @ =0x03002870
+    ldr r0, .L080B1494 @ =gDispIo
     ldrb r1, [r0, #0x10]
     movs r2, #0xfc
     ands r1, r2
@@ -18418,13 +18418,13 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0, #0x10]
-    ldr r0, .L080B1494 @ =0x03002870
+    ldr r0, .L080B1494 @ =gDispIo
     ldrb r1, [r0, #0x14]
     movs r2, #0xfc
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #0x14]
-    ldr r0, .L080B1494 @ =0x03002870
+    ldr r0, .L080B1494 @ =gDispIo
     ldrb r1, [r0, #0x18]
     movs r2, #3
     orrs r1, r2
@@ -18527,7 +18527,7 @@ func_080B1354: @ 0x080B1354
     .align 2, 0
 .L080B148C: .4byte 0x08C9D00C
 .L080B1490: .4byte func_0806DAB4
-.L080B1494: .4byte 0x03002870
+.L080B1494: .4byte gDispIo
 .L080B1498: .4byte 0x083F42D0
 .L080B149C: .4byte gBuf
 .L080B14A0: .4byte gBg1Tm
@@ -18549,25 +18549,25 @@ func_080B1354: @ 0x080B1354
 .L080B14C4:
     ldr r0, [r7]
     bl func_080B19AC
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x20
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x40
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x7f
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18575,7 +18575,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18583,7 +18583,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18591,7 +18591,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18599,7 +18599,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18607,7 +18607,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18615,7 +18615,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18623,7 +18623,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18631,7 +18631,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18639,7 +18639,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18647,7 +18647,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18655,7 +18655,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18663,7 +18663,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18671,7 +18671,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18679,7 +18679,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18687,7 +18687,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2d
     ldrb r1, [r0]
@@ -18699,7 +18699,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x31
     ldrb r1, [r0]
@@ -18711,7 +18711,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2c
     ldrb r1, [r0]
@@ -18723,7 +18723,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x30
     ldrb r1, [r0]
@@ -18735,7 +18735,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2f
     ldrb r1, [r0]
@@ -18743,7 +18743,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x33
     ldrb r1, [r0]
@@ -18755,7 +18755,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2e
     ldrb r1, [r0]
@@ -18767,7 +18767,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x32
     ldrb r1, [r0]
@@ -18779,7 +18779,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -18787,7 +18787,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -18795,7 +18795,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -18803,7 +18803,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x3c
     ldrb r1, [r0]
@@ -18811,7 +18811,7 @@ func_080B1354: @ 0x080B1354
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x44
     ldrb r1, [r0]
@@ -18819,7 +18819,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x45
     ldrb r1, [r0]
@@ -18827,7 +18827,7 @@ func_080B1354: @ 0x080B1354
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B1780 @ =0x03002870
+    ldr r0, .L080B1780 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x46
     ldrb r1, [r0]
@@ -18892,7 +18892,7 @@ func_080B1354: @ 0x080B1354
     pop {r0}
     bx r0
     .align 2, 0
-.L080B1780: .4byte 0x03002870
+.L080B1780: .4byte gDispIo
 .L080B1784: .4byte 0x030028AC
 .L080B1788: .4byte 0x0000FFE0
 .L080B178C: .4byte 0x0000E0FF
@@ -19747,49 +19747,49 @@ func_080B1DF0: @ 0x080B1DF0
 func_080B1E28: @ 0x080B1E28
     push {r7, lr}
     mov r7, sp
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #1
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #2
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #8
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x10
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0xdf
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0xbf
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B1F04 @ =0x03002870
+    ldr r0, .L080B1F04 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x7f
     ands r1, r2
@@ -19842,7 +19842,7 @@ func_080B1E28: @ 0x080B1E28
     pop {r0}
     bx r0
     .align 2, 0
-.L080B1F04: .4byte 0x03002870
+.L080B1F04: .4byte gDispIo
 .L080B1F08: .4byte gBg0Tm
 .L080B1F0C: .4byte gBg1Tm
 .L080B1F10: .4byte gBg2Tm
@@ -19977,7 +19977,7 @@ func_080B1FB0: @ 0x080B1FB0
     adds r4, r4, r0
     str r4, [sp]
     movs r0, #2
-    bl func_08006A34
+    bl PutSpriteExt
     add sp, #0x1c
     pop {r4, r7}
     pop {r0}
@@ -20917,13 +20917,13 @@ func_080B26C4: @ 0x080B26C4
     ldr r1, .L080B2A1C @ =func_0806DAB4
     bl Proc_ForEach
     bl func_080B1E28
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #0xc]
     movs r2, #0xfc
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #0xc]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #0x10]
     movs r2, #0xfc
     ands r1, r2
@@ -20933,13 +20933,13 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0, #0x10]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #0x14]
     movs r2, #0xfc
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #0x14]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #0x18]
     movs r2, #3
     orrs r1, r2
@@ -20977,25 +20977,25 @@ func_080B26C4: @ 0x080B26C4
     bl EnableBgSync
     ldr r0, [r7]
     bl func_080B17A0
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x20
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x40
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     ldrb r1, [r0, #1]
     movs r2, #0x7f
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0, #1]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21003,7 +21003,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21011,7 +21011,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21019,7 +21019,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21027,7 +21027,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21035,7 +21035,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21043,7 +21043,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21051,7 +21051,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21059,7 +21059,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21067,7 +21067,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21075,7 +21075,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21083,7 +21083,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21091,7 +21091,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21099,7 +21099,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21107,7 +21107,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21115,7 +21115,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2d
     ldrb r1, [r0]
@@ -21127,7 +21127,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x31
     ldrb r1, [r0]
@@ -21139,7 +21139,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2c
     ldrb r1, [r0]
@@ -21151,7 +21151,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x30
     ldrb r1, [r0]
@@ -21163,7 +21163,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2f
     ldrb r1, [r0]
@@ -21171,7 +21171,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x33
     ldrb r1, [r0]
@@ -21183,7 +21183,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x2e
     ldrb r1, [r0]
@@ -21195,7 +21195,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x32
     ldrb r1, [r0]
@@ -21207,7 +21207,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r3
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x34
     ldrb r1, [r0]
@@ -21215,7 +21215,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x35
     ldrb r1, [r0]
@@ -21223,7 +21223,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x36
     ldrb r1, [r0]
@@ -21231,7 +21231,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x3c
     ldrb r1, [r0]
@@ -21239,7 +21239,7 @@ func_080B26C4: @ 0x080B26C4
     orrs r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x44
     ldrb r1, [r0]
@@ -21247,7 +21247,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x45
     ldrb r1, [r0]
@@ -21255,7 +21255,7 @@ func_080B26C4: @ 0x080B26C4
     ands r1, r2
     adds r2, r1, #0
     strb r2, [r0]
-    ldr r0, .L080B2A20 @ =0x03002870
+    ldr r0, .L080B2A20 @ =gDispIo
     adds r1, r0, #0
     adds r0, #0x46
     ldrb r1, [r0]
@@ -21322,7 +21322,7 @@ func_080B26C4: @ 0x080B26C4
     .align 2, 0
 .L080B2A18: .4byte 0x08C9D00C
 .L080B2A1C: .4byte func_0806DAB4
-.L080B2A20: .4byte 0x03002870
+.L080B2A20: .4byte gDispIo
 .L080B2A24: .4byte 0x083F42D0
 .L080B2A28: .4byte gBuf
 .L080B2A2C: .4byte gBg1Tm
@@ -22676,7 +22676,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0x80
     lsls r0, r0, #6
     adds r4, r4, r0
@@ -22687,7 +22687,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     ldr r0, [sp, #0x14]
     subs r0, #0x28
@@ -22718,7 +22718,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0x80
     lsls r0, r0, #6
     adds r4, r4, r0
@@ -22729,7 +22729,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x10
     ldr r0, [sp, #0x14]
     subs r0, #0x18
@@ -22760,7 +22760,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0x80
     lsls r0, r0, #6
     adds r4, r4, r0
@@ -22771,7 +22771,7 @@ func_080B33D0: @ 0x080B33D0
     mov r3, r8
     ands r2, r3
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     ldr r0, [sp, #0x14]
     subs r0, #8
@@ -22803,7 +22803,7 @@ func_080B33D0: @ 0x080B33D0
     ands r1, r2
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     str r7, [sp]
     movs r0, #2
     movs r3, #0x80
@@ -22811,7 +22811,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r6, r3
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x20
     mov r0, sb
     subs r0, #0x28
@@ -22842,7 +22842,7 @@ func_080B33D0: @ 0x080B33D0
     ands r1, r2
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     str r7, [sp]
     movs r0, #2
     movs r3, #0x80
@@ -22850,7 +22850,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r6, r3
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #0x10
     mov r0, sb
     subs r0, #0x18
@@ -22881,7 +22881,7 @@ func_080B33D0: @ 0x080B33D0
     ands r1, r2
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     str r7, [sp]
     movs r0, #2
     movs r3, #0x80
@@ -22889,7 +22889,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r6, r3
     adds r2, r4, #0
     mov r3, r8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #8
     mov r0, sb
     subs r0, #8
@@ -22914,7 +22914,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r6, #0
     adds r2, r4, #0
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r5, [sp, #0x14]
     subs r5, #8
     mov r1, sl
@@ -22927,7 +22927,7 @@ func_080B33D0: @ 0x080B33D0
     movs r0, #2
     adds r2, r4, #0
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0x80
     lsls r0, r0, #6
     adds r6, r6, r0
@@ -22941,7 +22941,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r6, #0
     adds r2, r4, #0
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0xc0
     lsls r0, r0, #6
     adds r5, r5, r0
@@ -22951,7 +22951,7 @@ func_080B33D0: @ 0x080B33D0
     adds r1, r5, #0
     adds r2, r4, #0
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B366A:
     add sp, #0x18
     pop {r3, r4, r5}
@@ -22978,7 +22978,7 @@ func_080B36A0: @ 0x080B36A0
     push {r4, r5, lr}
     adds r4, r0, #0
     bl func_080B32A0
-    ldr r3, .L080B36F0 @ =0x03002870
+    ldr r3, .L080B36F0 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -23014,7 +23014,7 @@ func_080B36A0: @ 0x080B36A0
     pop {r0}
     bx r0
     .align 2, 0
-.L080B36F0: .4byte 0x03002870
+.L080B36F0: .4byte gDispIo
 .L080B36F4: .4byte 0x0000FFE0
 .L080B36F8: .4byte 0x0000E0FF
     func_end func_080B36A0
@@ -23052,7 +23052,7 @@ func_080B3720: @ 0x080B3720
     adds r0, #1
     str r0, [r3, #0x2c]
     asrs r4, r0, #2
-    ldr r2, .L080B37A0 @ =0x03002870
+    ldr r2, .L080B37A0 @ =gDispIo
     adds r6, r2, #0
     adds r6, #0x3c
     movs r0, #0x3f
@@ -23104,7 +23104,7 @@ func_080B3720: @ 0x080B3720
     pop {r0}
     bx r0
     .align 2, 0
-.L080B37A0: .4byte 0x03002870
+.L080B37A0: .4byte gDispIo
     func_end func_080B3720
 
     thumb_func_start func_080B37A4
@@ -23381,7 +23381,7 @@ func_080B3940: @ 0x080B3940
     strb r1, [r0]
     adds r4, r0, #0
 .L080B39A6:
-    ldr r3, .L080B39D4 @ =0x03002870
+    ldr r3, .L080B39D4 @ =gDispIo
     adds r1, r3, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -23406,7 +23406,7 @@ func_080B3940: @ 0x080B3940
     pop {r0}
     bx r0
     .align 2, 0
-.L080B39D4: .4byte 0x03002870
+.L080B39D4: .4byte gDispIo
     func_end func_080B3940
 
     thumb_func_start func_080B39D8
@@ -23499,7 +23499,7 @@ func_080B39D8: @ 0x080B39D8
     ldrb r0, [r3]
     cmp r0, #0
     bne .L080B3AAE
-    ldr r2, .L080B3AEC @ =0x03002870
+    ldr r2, .L080B3AEC @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -23544,7 +23544,7 @@ func_080B39D8: @ 0x080B39D8
 .L080B3AE0: .4byte 0x085E99B4
 .L080B3AE4: .4byte 0x06010000
 .L080B3AE8: .4byte 0x02000000
-.L080B3AEC: .4byte 0x03002870
+.L080B3AEC: .4byte gDispIo
 .L080B3AF0: .4byte 0x030028AC
 .L080B3AF4: .4byte 0x0000FFE0
 .L080B3AF8: .4byte 0x0000E0FF
@@ -23823,7 +23823,7 @@ func_080B3CD0: @ 0x080B3CD0
     movs r0, #2
     movs r1, #0
     adds r2, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B3D1C @ =0x08CE760E
     movs r0, #0x80
     lsls r0, r0, #6
@@ -23831,7 +23831,7 @@ func_080B3CD0: @ 0x080B3CD0
     movs r0, #1
     movs r1, #0
     adds r2, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B3D10:
     add sp, #4
     pop {r4}
@@ -24017,7 +24017,7 @@ func_080B3E20: @ 0x080B3E20
     str r3, [sp]
     adds r0, r6, #0
     adds r3, r7, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B3E6A:
     add sp, #4
     pop {r4, r5, r6, r7}
@@ -24935,7 +24935,7 @@ func_080B4510: @ 0x080B4510
     mov r6, r8
     push {r6, r7}
     adds r7, r0, #0
-    ldr r4, .L080B4608 @ =0x03002870
+    ldr r4, .L080B4608 @ =gDispIo
     adds r1, r4, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -24989,7 +24989,7 @@ func_080B4510: @ 0x080B4510
     cmp r0, sb
     bne .L080B4598
     adds r0, r6, #0
-    bl func_08006D50
+    bl EndFaceById
     ldr r0, [r7, #0x40]
     adds r0, r0, r4
     adds r0, #0x34
@@ -25057,7 +25057,7 @@ func_080B4510: @ 0x080B4510
     pop {r0}
     bx r0
     .align 2, 0
-.L080B4608: .4byte 0x03002870
+.L080B4608: .4byte gDispIo
 .L080B460C: .4byte 0xFFFFFBFF
     func_end func_080B4510
 
@@ -26084,7 +26084,7 @@ func_080B4D4C: @ 0x080B4D4C
     adds r0, r7, #0
     mov r1, sb
     movs r3, #0x28
-    bl func_08007BCC
+    bl StartFace2
     adds r2, r0, #0
     str r2, [r5, #4]
     movs r1, #0xc0
@@ -26145,7 +26145,7 @@ func_080B4D4C: @ 0x080B4D4C
     cmp r1, #0x20
     bne .L080B4E76
     strb r6, [r4]
-    ldr r3, .L080B4E84 @ =0x03002870
+    ldr r3, .L080B4E84 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -26176,7 +26176,7 @@ func_080B4D4C: @ 0x080B4D4C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B4E84: .4byte 0x03002870
+.L080B4E84: .4byte gDispIo
     func_end func_080B4D4C
 
     thumb_func_start func_080B4E88
@@ -26419,7 +26419,7 @@ WorldMap_Init: @ 0x080B5030
     stm r1!, {r2, r3}
     movs r0, #0
     bl InitBgs
-    ldr r4, .L080B50BC @ =0x03002870
+    ldr r4, .L080B50BC @ =gDispIo
     movs r1, #4
     rsbs r1, r1, #0
     adds r0, r1, #0
@@ -26469,7 +26469,7 @@ WorldMap_Init: @ 0x080B5030
     bx r0
     .align 2, 0
 .L080B50B8: .4byte 0x085E9AA0
-.L080B50BC: .4byte 0x03002870
+.L080B50BC: .4byte gDispIo
 .L080B50C0: .4byte gBmStatus
     func_end WorldMap_Init
 
@@ -26489,7 +26489,7 @@ func_080B50C4: @ 0x080B50C4
     strh r1, [r0]
     adds r0, #0xc
     strb r5, [r0]
-    ldr r7, .L080B5230 @ =0x03002870
+    ldr r7, .L080B5230 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r7, #1]
@@ -26644,7 +26644,7 @@ func_080B50C4: @ 0x080B50C4
     bl StartPaletteFadeOutOfBlack
     b .L080B526C
     .align 2, 0
-.L080B5230: .4byte 0x03002870
+.L080B5230: .4byte gDispIo
 .L080B5234: .4byte 0x030028B4
 .L080B5238: .4byte 0x030028B5
 .L080B523C: .4byte 0x084221D4
@@ -26684,7 +26684,7 @@ func_080B5280: @ 0x080B5280
     bl EndTalk
     bl func_080097FC
     bl ResetUnitSprites
-    ldr r2, .L080B52C8 @ =0x03002870
+    ldr r2, .L080B52C8 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0xc0
@@ -26706,7 +26706,7 @@ func_080B5280: @ 0x080B5280
     pop {r0}
     bx r0
     .align 2, 0
-.L080B52C8: .4byte 0x03002870
+.L080B52C8: .4byte gDispIo
     func_end func_080B5280
 
     thumb_func_start func_080B52CC
@@ -26727,7 +26727,7 @@ func_080B52D0: @ 0x080B52D0
     bl SetOnHBlankB
     movs r0, #0
     bl func_08077680
-    ldr r0, .L080B5344 @ =0x03002870
+    ldr r0, .L080B5344 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -26771,7 +26771,7 @@ func_080B52D0: @ 0x080B52D0
     bx r0
     .align 2, 0
 .L080B5340: .4byte func_08077860
-.L080B5344: .4byte 0x03002870
+.L080B5344: .4byte gDispIo
 .L080B5348: .4byte 0x0000FFE0
 .L080B534C: .4byte 0x0000E0FF
     func_end func_080B52D0
@@ -26837,7 +26837,7 @@ func_080B5350: @ 0x080B5350
     beq .L080B540C
     movs r0, #0
     bl SetOnHBlankB
-    ldr r3, .L080B5414 @ =0x03002870
+    ldr r3, .L080B5414 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -26878,7 +26878,7 @@ func_080B5350: @ 0x080B5350
     pop {r0}
     bx r0
     .align 2, 0
-.L080B5414: .4byte 0x03002870
+.L080B5414: .4byte gDispIo
 .L080B5418: .4byte 0x0000FFE0
 .L080B541C: .4byte 0x0000E0FF
     func_end func_080B5350
@@ -27752,7 +27752,7 @@ func_080B5A84: @ 0x080B5A84
     subs r1, r1, r2
     adds r2, r6, #0
     bl func_0807764C
-    ldr r3, .L080B5AFC @ =0x03002870
+    ldr r3, .L080B5AFC @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -27779,7 +27779,7 @@ func_080B5A84: @ 0x080B5A84
     bx r0
     .align 2, 0
 .L080B5AF8: .4byte 0x02000000
-.L080B5AFC: .4byte 0x03002870
+.L080B5AFC: .4byte gDispIo
     func_end func_080B5A84
 
     thumb_func_start func_080B5B00
@@ -27789,7 +27789,7 @@ func_080B5B00: @ 0x080B5B00
     ldrb r2, [r1]
     ands r0, r2
     strb r0, [r1]
-    ldr r2, .L080B5B40 @ =0x03002870
+    ldr r2, .L080B5B40 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -27815,7 +27815,7 @@ func_080B5B00: @ 0x080B5B00
     bx lr
     .align 2, 0
 .L080B5B3C: .4byte 0x02000814
-.L080B5B40: .4byte 0x03002870
+.L080B5B40: .4byte gDispIo
     func_end func_080B5B00
 
     thumb_func_start func_080B5B44
@@ -28658,7 +28658,7 @@ func_080B6190: @ 0x080B6190
     ldr r1, [r7, #0x34]
     mov r2, r8
     bl func_0807764C
-    ldr r3, .L080B6208 @ =0x03002870
+    ldr r3, .L080B6208 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -28688,14 +28688,14 @@ func_080B6190: @ 0x080B6190
     pop {r0}
     bx r0
     .align 2, 0
-.L080B6208: .4byte 0x03002870
+.L080B6208: .4byte gDispIo
     func_end func_080B6190
 
     thumb_func_start func_080B620C
 func_080B620C: @ 0x080B620C
     push {lr}
     bl func_08012504
-    ldr r3, .L080B6260 @ =0x03002870
+    ldr r3, .L080B6260 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -28734,7 +28734,7 @@ func_080B620C: @ 0x080B620C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B6260: .4byte 0x03002870
+.L080B6260: .4byte gDispIo
     func_end func_080B620C
 
     thumb_func_start func_080B6264
@@ -31158,7 +31158,7 @@ func_080B7408: @ 0x080B7408
     lsls r3, r3, #3
     adds r2, r4, r3
     ldr r3, .L080B74B0 @ =0x08B905F8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r5, #4
     adds r7, #0x20
     subs r6, #1
@@ -31224,7 +31224,7 @@ func_080B74B4: @ 0x080B74B4
     lsls r3, r3, #3
     adds r2, r4, r3
     ldr r3, .L080B752C @ =0x08B905F8
-    bl func_08006A34
+    bl PutSpriteExt
     adds r7, #4
     adds r6, #0x20
     subs r5, #1
@@ -31275,7 +31275,7 @@ func_080B7530: @ 0x080B7530
     ldr r0, [r4, #0x30]
     ldr r1, [r4, #0x2c]
     bl func_080B6E84
-    ldr r2, .L080B75C8 @ =0x03002870
+    ldr r2, .L080B75C8 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -31315,7 +31315,7 @@ func_080B7530: @ 0x080B7530
     .align 2, 0
 .L080B75C0: .4byte 0x08194714
 .L080B75C4: .4byte 0x02000830
-.L080B75C8: .4byte 0x03002870
+.L080B75C8: .4byte gDispIo
 .L080B75CC: .4byte 0x0000FFE0
 .L080B75D0: .4byte 0x0000E0FF
 .L080B75D4: .4byte func_080B74B4
@@ -31406,7 +31406,7 @@ func_080B766C: @ 0x080B766C
     adds r2, #1
     movs r4, #0
     strh r2, [r0]
-    ldr r0, .L080B76B4 @ =0x03002870
+    ldr r0, .L080B76B4 @ =gDispIo
     mov ip, r0
     mov r1, ip
     adds r1, #0x3c
@@ -31435,7 +31435,7 @@ func_080B766C: @ 0x080B766C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B76B4: .4byte 0x03002870
+.L080B76B4: .4byte gDispIo
     func_end func_080B766C
 
     thumb_func_start func_080B76B8
@@ -31508,7 +31508,7 @@ func_080B7714: @ 0x080B7714
     ldr r2, .L080B77CC @ =0x01000008
     mov r0, sp
     bl CpuSetFast
-    ldr r6, .L080B77D0 @ =0x03002870
+    ldr r6, .L080B77D0 @ =gDispIo
     movs r0, #8
     rsbs r0, r0, #0
     ldrb r1, [r6]
@@ -31583,7 +31583,7 @@ func_080B7714: @ 0x080B7714
     bx r0
     .align 2, 0
 .L080B77CC: .4byte 0x01000008
-.L080B77D0: .4byte 0x03002870
+.L080B77D0: .4byte gDispIo
 .L080B77D4: .4byte gPal
 .L080B77D8: .4byte 0x01000100
     func_end func_080B7714
@@ -31638,7 +31638,7 @@ func_080B7810: @ 0x080B7810
     bl ApplyPaletteExt
     ldr r0, .L080B78C4 @ =func_080B6C14
     bl SetOnHBlankA
-    ldr r2, .L080B78C8 @ =0x03002870
+    ldr r2, .L080B78C8 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -31704,7 +31704,7 @@ func_080B7810: @ 0x080B7810
     .align 2, 0
 .L080B78C0: .4byte 0x08194714
 .L080B78C4: .4byte func_080B6C14
-.L080B78C8: .4byte 0x03002870
+.L080B78C8: .4byte gDispIo
 .L080B78CC: .4byte 0x0000FFE0
 .L080B78D0: .4byte 0x0000E0FF
 .L080B78D4: .4byte func_080B7408
@@ -31949,7 +31949,7 @@ func_080B7A24: @ 0x080B7A24
     asrs r0, r0, #0x10
     cmp r0, #0xd8
     bne .L080B7B06
-    ldr r2, .L080B7B0C @ =0x03002870
+    ldr r2, .L080B7B0C @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -31989,7 +31989,7 @@ func_080B7A24: @ 0x080B7A24
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7B0C: .4byte 0x03002870
+.L080B7B0C: .4byte gDispIo
 .L080B7B10: .4byte 0x0000FFE0
 .L080B7B14: .4byte 0x0000E0FF
     func_end func_080B7A24
@@ -32003,7 +32003,7 @@ func_080B7B18: @ 0x080B7B18
     adds r2, #1
     movs r3, #0
     strh r2, [r0]
-    ldr r0, .L080B7B6C @ =0x03002870
+    ldr r0, .L080B7B6C @ =gDispIo
     mov ip, r0
     mov r1, ip
     adds r1, #0x3c
@@ -32036,7 +32036,7 @@ func_080B7B18: @ 0x080B7B18
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7B6C: .4byte 0x03002870
+.L080B7B6C: .4byte gDispIo
 .L080B7B70: .4byte func_080B77DC
     func_end func_080B7B18
 
@@ -32054,7 +32054,7 @@ func_080B7B74: @ 0x080B7B74
     adds r4, #0x44
     movs r2, #0
     movs r3, #0
-    ldr r0, .L080B7BC4 @ =0x03002870
+    ldr r0, .L080B7BC4 @ =gDispIo
     mov ip, r0
     mov r1, ip
     adds r1, #0x3c
@@ -32078,7 +32078,7 @@ func_080B7B74: @ 0x080B7B74
     bx r0
     .align 2, 0
 .L080B7BC0: .4byte 0x08CEDC98
-.L080B7BC4: .4byte 0x03002870
+.L080B7BC4: .4byte gDispIo
     func_end func_080B7B74
 
     thumb_func_start func_080B7BC8
@@ -32177,7 +32177,7 @@ func_080B7C5C: @ 0x080B7C5C
     adds r5, r0, #0
     movs r0, #0
     bl InitBgs
-    ldr r2, .L080B7CB4 @ =0x03002870
+    ldr r2, .L080B7CB4 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -32212,7 +32212,7 @@ func_080B7C5C: @ 0x080B7C5C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7CB4: .4byte 0x03002870
+.L080B7CB4: .4byte gDispIo
 .L080B7CB8: .4byte 0x081C3590
 .L080B7CBC: .4byte 0x06000800
 .L080B7CC0: .4byte 0x081C39A4
@@ -32262,7 +32262,7 @@ func_080B7D0C: @ 0x080B7D0C
     bl SetNextGameAction
     movs r0, #0
     bl InitBgs
-    ldr r6, .L080B7D80 @ =0x03002870
+    ldr r6, .L080B7D80 @ =gDispIo
     adds r1, r6, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -32308,7 +32308,7 @@ func_080B7D0C: @ 0x080B7D0C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7D80: .4byte 0x03002870
+.L080B7D80: .4byte gDispIo
 .L080B7D84: .4byte 0x000009F3
     func_end func_080B7D0C
 
@@ -32339,7 +32339,7 @@ func_080B7DAC: @ 0x080B7DAC
     adds r5, r0, #0
     movs r0, #0
     bl InitBgs
-    ldr r6, .L080B7E18 @ =0x03002870
+    ldr r6, .L080B7E18 @ =gDispIo
     adds r1, r6, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -32385,7 +32385,7 @@ func_080B7DAC: @ 0x080B7DAC
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7E18: .4byte 0x03002870
+.L080B7E18: .4byte gDispIo
 .L080B7E1C: .4byte 0x000009F5
     func_end func_080B7DAC
 
@@ -32412,7 +32412,7 @@ func_080B7E3C: @ 0x080B7E3C
     adds r5, r0, #0
     movs r0, #0
     bl InitBgs
-    ldr r6, .L080B7EA8 @ =0x03002870
+    ldr r6, .L080B7EA8 @ =gDispIo
     adds r1, r6, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -32458,7 +32458,7 @@ func_080B7E3C: @ 0x080B7E3C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B7EA8: .4byte 0x03002870
+.L080B7EA8: .4byte gDispIo
 .L080B7EAC: .4byte 0x000009F4
     func_end func_080B7E3C
 
@@ -32897,7 +32897,7 @@ func_080B8230: @ 0x080B8230
     bl InitBgs
     bl InitFaces
     bl func_080B80C8
-    ldr r3, .L080B8284 @ =0x03002870
+    ldr r3, .L080B8284 @ =gDispIo
     adds r1, r3, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -32929,7 +32929,7 @@ func_080B8230: @ 0x080B8230
     ldr r0, [r0, #4]
     b .L080B8298
     .align 2, 0
-.L080B8284: .4byte 0x03002870
+.L080B8284: .4byte gDispIo
 .L080B8288: .4byte 0x01000010
 .L080B828C: .4byte gPlayStatus
 .L080B8290: .4byte 0x08CEE630
@@ -33311,7 +33311,7 @@ func_080B853C: @ 0x080B853C
     bl InitBgs
     bl ClearTalk
     bl func_080B8E98
-    ldr r3, .L080B859C @ =0x03002870
+    ldr r3, .L080B859C @ =gDispIo
     adds r1, r3, #0
     adds r1, #0x3c
     movs r0, #0xc0
@@ -33351,7 +33351,7 @@ func_080B853C: @ 0x080B853C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B859C: .4byte 0x03002870
+.L080B859C: .4byte gDispIo
 .L080B85A0: .4byte 0x0000FFE0
 .L080B85A4: .4byte 0x0000E0FF
     func_end func_080B853C
@@ -33529,7 +33529,7 @@ func_080B8654: @ 0x080B8654
     movs r2, #0
     str r2, [sp]
     str r6, [sp, #4]
-    bl func_08005AD4
+    bl PutDrawText
     b .L080B8828
     .align 2, 0
 .L080B8708: .4byte 0x00001078
@@ -33553,7 +33553,7 @@ func_080B8654: @ 0x080B8654
     str r4, [sp]
     str r6, [sp, #4]
     movs r2, #0
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B885C @ =0x000012AB
     bl GetMsg
     adds r2, r0, #0
@@ -33565,7 +33565,7 @@ func_080B8654: @ 0x080B8654
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8860 @ =0x000012AC
     bl GetMsg
     adds r2, r0, #0
@@ -33577,7 +33577,7 @@ func_080B8654: @ 0x080B8654
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x20
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8864 @ =0x000012AD
     bl GetMsg
     adds r2, r0, #0
@@ -33589,7 +33589,7 @@ func_080B8654: @ 0x080B8654
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x40
-    bl func_08005AD4
+    bl PutDrawText
     mov r1, r8
     ldrh r0, [r1, #0x3c]
     bl func_080AAD00
@@ -33639,7 +33639,7 @@ func_080B8654: @ 0x080B8654
     str r0, [sp]
     movs r0, #0
     movs r3, #0x38
-    bl func_08007BCC
+    bl StartFace2
     mov r4, r8
     ldr r0, [r4, #0x2c]
     ldr r0, [r0, #0xc]
@@ -33659,7 +33659,7 @@ func_080B8654: @ 0x080B8654
     movs r2, #0
     mov r0, r8
     str r2, [r0, #0x34]
-    ldr r3, .L080B8870 @ =0x03002870
+    ldr r3, .L080B8870 @ =gDispIo
     adds r1, r3, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -33687,7 +33687,7 @@ func_080B8654: @ 0x080B8654
 .L080B8864: .4byte 0x000012AD
 .L080B8868: .4byte 0x08BDCE4C
 .L080B886C: .4byte 0x00000502
-.L080B8870: .4byte 0x03002870
+.L080B8870: .4byte gDispIo
     func_end func_080B8654
 
     thumb_func_start func_080B8874
@@ -33798,7 +33798,7 @@ func_080B88E0: @ 0x080B88E0
     mov r8, r2
     str r2, [sp]
     str r5, [sp, #4]
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8B64 @ =0x000012AB
     bl GetMsg
     adds r2, r0, #0
@@ -33812,7 +33812,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8B6C @ =0x000012AC
     mov sl, r0
     bl GetMsg
@@ -33826,7 +33826,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x20
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8B70 @ =0x000012AD
     mov sb, r0
     bl GetMsg
@@ -33840,7 +33840,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x40
-    bl func_08005AD4
+    bl PutDrawText
     ldrh r0, [r7, #0x3c]
     bl func_080AAD00
     lsls r0, r0, #1
@@ -33894,7 +33894,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp]
     str r5, [sp, #4]
     movs r2, #0
-    bl func_08005AD4
+    bl PutDrawText
     ldr r0, .L080B8B64 @ =0x000012AB
     bl GetMsg
     adds r2, r0, #0
@@ -33907,7 +33907,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     mov r0, sl
     bl GetMsg
     adds r2, r0, #0
@@ -33920,7 +33920,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x20
-    bl func_08005AD4
+    bl PutDrawText
     mov r0, sb
     bl GetMsg
     adds r2, r0, #0
@@ -33933,7 +33933,7 @@ func_080B88E0: @ 0x080B88E0
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0x40
-    bl func_08005AD4
+    bl PutDrawText
     ldrh r0, [r7, #0x3e]
     bl func_080AAD00
     lsls r0, r0, #1
@@ -33969,7 +33969,7 @@ func_080B88E0: @ 0x080B88E0
     bl func_080061D8
     mov r0, r8
     str r0, [r7, #0x34]
-    ldr r2, .L080B8B80 @ =0x03002870
+    ldr r2, .L080B8B80 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -33999,7 +33999,7 @@ func_080B88E0: @ 0x080B88E0
     str r0, [sp]
     movs r0, #0
     movs r3, #0x30
-    bl func_08007BCC
+    bl StartFace2
     ldr r0, [r7, #0x38]
     ldrb r0, [r0, #2]
     subs r0, #1
@@ -34012,7 +34012,7 @@ func_080B88E0: @ 0x080B88E0
     str r0, [sp]
     movs r0, #1
     movs r3, #0x30
-    bl func_08007BCC
+    bl StartFace2
     add sp, #8
     pop {r3, r4, r5}
     mov r8, r3
@@ -34034,7 +34034,7 @@ func_080B88E0: @ 0x080B88E0
 .L080B8B74: .4byte 0x0000044A
 .L080B8B78: .4byte 0x00000452
 .L080B8B7C: .4byte 0x0000045C
-.L080B8B80: .4byte 0x03002870
+.L080B8B80: .4byte gDispIo
 .L080B8B84: .4byte 0x08BDCE4C
 .L080B8B88: .4byte 0x00000503
 .L080B8B8C: .4byte 0x00000502
@@ -34092,7 +34092,7 @@ func_080B8B90: @ 0x080B8B90
 func_080B8BF0: @ 0x080B8BF0
     movs r3, #0
     str r3, [r0, #0x34]
-    ldr r0, .L080B8C34 @ =0x03002870
+    ldr r0, .L080B8C34 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -34125,7 +34125,7 @@ func_080B8BF0: @ 0x080B8BF0
     strh r0, [r1, #0x3c]
     bx lr
     .align 2, 0
-.L080B8C34: .4byte 0x03002870
+.L080B8C34: .4byte gDispIo
 .L080B8C38: .4byte 0x0000FFE0
 .L080B8C3C: .4byte 0x0000E0FF
     func_end func_080B8BF0
@@ -34138,7 +34138,7 @@ func_080B8C40: @ 0x080B8C40
     asrs r3, r0, #2
     adds r0, #1
     str r0, [r4, #0x34]
-    ldr r0, .L080B8C88 @ =0x03002870
+    ldr r0, .L080B8C88 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -34168,7 +34168,7 @@ func_080B8C40: @ 0x080B8C40
     pop {r0}
     bx r0
     .align 2, 0
-.L080B8C88: .4byte 0x03002870
+.L080B8C88: .4byte gDispIo
     func_end func_080B8C40
 
     thumb_func_start func_080B8C8C
@@ -34519,7 +34519,7 @@ func_080B8EEC: @ 0x080B8EEC
 .L080B8F34:
     bl func_080B8EA8
 .L080B8F38:
-    ldr r3, .L080B8F60 @ =0x03002870
+    ldr r3, .L080B8F60 @ =gDispIo
     adds r1, r3, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -34540,7 +34540,7 @@ func_080B8EEC: @ 0x080B8EEC
     pop {r0}
     bx r0
     .align 2, 0
-.L080B8F60: .4byte 0x03002870
+.L080B8F60: .4byte gDispIo
     func_end func_080B8EEC
 
     thumb_func_start func_080B8F64
@@ -34595,7 +34595,7 @@ func_080B8F64: @ 0x080B8F64
     thumb_func_start func_080B8FBC
 func_080B8FBC: @ 0x080B8FBC
     push {r4, lr}
-    ldr r1, .L080B9014 @ =0x03002870
+    ldr r1, .L080B9014 @ =gDispIo
     mov ip, r1
     mov r3, ip
     adds r3, #0x3c
@@ -34637,7 +34637,7 @@ func_080B8FBC: @ 0x080B8FBC
     pop {r0}
     bx r0
     .align 2, 0
-.L080B9014: .4byte 0x03002870
+.L080B9014: .4byte gDispIo
 .L080B9018: .4byte 0x0000FFE0
 .L080B901C: .4byte 0x0000E0FF
     func_end func_080B8FBC
@@ -34653,7 +34653,7 @@ func_080B9020: @ 0x080B9020
     strh r0, [r4]
     lsls r2, r2, #0x10
     asrs r2, r2, #0x12
-    ldr r0, .L080B9070 @ =0x03002870
+    ldr r0, .L080B9070 @ =gDispIo
     mov ip, r0
     mov r3, ip
     adds r3, #0x3c
@@ -34684,12 +34684,12 @@ func_080B9020: @ 0x080B9020
     pop {r0}
     bx r0
     .align 2, 0
-.L080B9070: .4byte 0x03002870
+.L080B9070: .4byte gDispIo
     func_end func_080B9020
 
     thumb_func_start func_080B9074
 func_080B9074: @ 0x080B9074
-    ldr r2, .L080B90A4 @ =0x03002870
+    ldr r2, .L080B90A4 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0xc0
@@ -34714,7 +34714,7 @@ func_080B9074: @ 0x080B9074
     strh r0, [r2, #0x3c]
     bx lr
     .align 2, 0
-.L080B90A4: .4byte 0x03002870
+.L080B90A4: .4byte gDispIo
 .L080B90A8: .4byte 0x0000FFE0
     func_end func_080B9074
 
@@ -34734,7 +34734,7 @@ func_080B90AC: @ 0x080B90AC
 func_080B90C0: @ 0x080B90C0
     push {r4, lr}
     adds r4, r0, #0
-    ldr r2, .L080B9110 @ =0x03002870
+    ldr r2, .L080B9110 @ =gDispIo
     movs r0, #1
     ldrb r1, [r2, #1]
     orrs r0, r1
@@ -34769,7 +34769,7 @@ func_080B90C0: @ 0x080B90C0
     pop {r0}
     bx r0
     .align 2, 0
-.L080B9110: .4byte 0x03002870
+.L080B9110: .4byte gDispIo
 .L080B9114: .4byte 0x08401404
 .L080B9118: .4byte 0x083FF780
 .L080B911C: .4byte 0x06004000
@@ -34826,7 +34826,7 @@ func_080B915C: @ 0x080B915C
     bl GetChapterCompletionStatsListCount
     adds r4, #0x38
     strb r0, [r4]
-    ldr r7, .L080B9234 @ =0x03002870
+    ldr r7, .L080B9234 @ =gDispIo
     movs r4, #2
     rsbs r4, r4, #0
     adds r0, r4, #0
@@ -34909,7 +34909,7 @@ func_080B915C: @ 0x080B915C
     pop {r0}
     bx r0
     .align 2, 0
-.L080B9234: .4byte 0x03002870
+.L080B9234: .4byte gDispIo
 .L080B9238: .4byte 0x085DFB30
 .L080B923C: .4byte 0x0866AF8C
 .L080B9240: .4byte 0x06008000
@@ -34924,7 +34924,7 @@ func_080B924C: @ 0x080B924C
     movs r0, #1
     movs r1, #0
     bl SetBgOffset
-    ldr r0, .L080B9330 @ =0x03002870
+    ldr r0, .L080B9330 @ =gDispIo
     mov ip, r0
     movs r0, #0x20
     mov r1, ip
@@ -35024,7 +35024,7 @@ func_080B924C: @ 0x080B924C
     bx r0
     .align 2, 0
 .L080B932C: .4byte 0x0000FF78
-.L080B9330: .4byte 0x03002870
+.L080B9330: .4byte gDispIo
 .L080B9334: .4byte 0x08CEEBA4
 .L080B9338: .4byte 0x0000118A
 .L080B933C: .4byte 0x00001185
@@ -35095,7 +35095,7 @@ func_080B9340: @ 0x080B9340
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     adds r0, r5, #0
     adds r0, #0x17
     lsls r0, r0, #1
@@ -35174,7 +35174,7 @@ func_080B9340: @ 0x080B9340
     str r2, [sp, #4]
     movs r2, #3
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     adds r4, r7, #0
     b .L080B9542
     .align 2, 0
@@ -35226,7 +35226,7 @@ func_080B9340: @ 0x080B9340
     str r3, [sp, #4]
     movs r2, #2
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     b .L080B9542
     .align 2, 0
 .L080B94E8: .4byte 0x08CEEBA4
@@ -35269,7 +35269,7 @@ func_080B9340: @ 0x080B9340
     str r3, [sp, #4]
     movs r2, #2
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
 .L080B9542:
     cmp r6, #0x2f
     bgt .L080B956C
@@ -35329,7 +35329,7 @@ func_080B9340: @ 0x080B9340
     str r2, [sp]
     str r3, [sp, #4]
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
     b .L080B960E
     .align 2, 0
 .L080B95C0: .4byte gPlayStatus
@@ -35366,7 +35366,7 @@ func_080B9340: @ 0x080B9340
     str r2, [sp]
     str r3, [sp, #4]
     movs r3, #0
-    bl func_08005AD4
+    bl PutDrawText
 .L080B960E:
     adds r0, r5, #0
     adds r0, #0x14
@@ -35507,7 +35507,7 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x18
     movs r2, #0x14
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B98F4 @ =0x08CEEAE4
     movs r0, #0xc9
     lsls r0, r0, #7
@@ -35515,7 +35515,7 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x80
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r1, .L080B98F8 @ =gPlayStatus
     movs r0, #0x80
     ldrb r1, [r1, #0x14]
@@ -35530,19 +35530,19 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x38
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9904 @ =0x08CEEA9E
     str r4, [sp]
     movs r0, #2
     movs r1, #0x80
     movs r2, #0x38
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9908 @ =0x08CEEABA
     str r4, [sp]
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x58
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B990C @ =0x08CEEAD6
     movs r0, #0xe9
     lsls r0, r0, #7
@@ -35550,7 +35550,7 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x80
     movs r2, #0x58
-    bl func_08006A34
+    bl PutSpriteExt
     movs r7, #0
     ldr r0, [sp, #4]
     adds r0, #0x4c
@@ -35607,7 +35607,7 @@ func_080B96FC: @ 0x080B96FC
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     movs r0, #1
     ands r0, r7
     lsls r1, r0, #3
@@ -35639,7 +35639,7 @@ func_080B96FC: @ 0x080B96FC
     adds r0, r0, r4
     str r0, [sp]
     movs r0, #2
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B9834:
     movs r0, #2
     add r8, r0
@@ -35701,7 +35701,7 @@ func_080B96FC: @ 0x080B96FC
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     movs r0, #1
     ands r0, r7
     lsls r1, r0, #3
@@ -35726,7 +35726,7 @@ func_080B96FC: @ 0x080B96FC
     ldr r0, .L080B9920 @ =0x0000F480
     str r0, [sp]
     movs r0, #2
-    bl func_08006A34
+    bl PutSpriteExt
     b .L080B9AF6
     .align 2, 0
 .L080B98EC: .4byte 0x08CEEA70
@@ -35750,31 +35750,31 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x30
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9B10 @ =0x08CEEA9E
     str r4, [sp]
     movs r0, #2
     movs r1, #0x80
     movs r2, #0x30
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9B14 @ =0x08CEEAC8
     str r4, [sp]
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x48
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9B18 @ =0x08CEEAAC
     str r4, [sp]
     movs r0, #2
     movs r1, #0x80
     movs r2, #0x48
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9B1C @ =0x08CEEABA
     str r4, [sp]
     movs r0, #2
     movs r1, #0x10
     movs r2, #0x60
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r3, .L080B9B20 @ =0x08CEEAD6
     movs r0, #0xe9
     lsls r0, r0, #7
@@ -35782,7 +35782,7 @@ func_080B96FC: @ 0x080B96FC
     movs r0, #2
     movs r1, #0x80
     movs r2, #0x60
-    bl func_08006A34
+    bl PutSpriteExt
     movs r7, #0
     ldr r0, [sp, #4]
     adds r0, #0x4c
@@ -35839,7 +35839,7 @@ func_080B96FC: @ 0x080B96FC
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     movs r0, #1
     ands r0, r7
     lsls r1, r0, #3
@@ -35873,7 +35873,7 @@ func_080B96FC: @ 0x080B96FC
     adds r0, r0, r4
     str r0, [sp]
     movs r0, #2
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B9A3E:
     movs r0, #2
     add r8, r0
@@ -35933,7 +35933,7 @@ func_080B96FC: @ 0x080B96FC
     adds r1, r6, #0
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     movs r0, #1
     ands r0, r7
     lsls r1, r0, #3
@@ -35960,7 +35960,7 @@ func_080B96FC: @ 0x080B96FC
     ldr r0, .L080B9B34 @ =0x0000F480
     str r0, [sp]
     movs r0, #2
-    bl func_08006A34
+    bl PutSpriteExt
 .L080B9AF6:
     add sp, #8
     pop {r3, r4, r5}
@@ -36223,7 +36223,7 @@ func_080B9B38: @ 0x080B9B38
 func_080B9D54: @ 0x080B9D54
     push {r4, r5, lr}
     adds r1, r0, #0
-    ldr r0, .L080B9DC4 @ =0x03002870
+    ldr r0, .L080B9DC4 @ =gDispIo
     mov ip, r0
     mov r3, ip
     adds r3, #0x3c
@@ -36277,7 +36277,7 @@ func_080B9D54: @ 0x080B9D54
     pop {r0}
     bx r0
     .align 2, 0
-.L080B9DC4: .4byte 0x03002870
+.L080B9DC4: .4byte gDispIo
 .L080B9DC8: .4byte 0x0000FFE0
 .L080B9DCC: .4byte 0x0000E0FF
 .L080B9DD0: .4byte 0x08CEEB84
@@ -36590,7 +36590,7 @@ func_080B9FD8: @ 0x080B9FD8
     movs r0, #0
     bl InitBgs
     bl ResetText
-    ldr r2, .L080BA0F4 @ =0x03002870
+    ldr r2, .L080BA0F4 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -36660,7 +36660,7 @@ func_080B9FD8: @ 0x080B9FD8
     movs r0, #0x2a
     movs r1, #0
     bl StartBgm
-    ldr r3, .L080BA0F4 @ =0x03002870
+    ldr r3, .L080BA0F4 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -36703,7 +36703,7 @@ func_080B9FD8: @ 0x080B9FD8
     bx r0
     .align 2, 0
 .L080BA0F0: .4byte 0x08CEED60
-.L080BA0F4: .4byte 0x03002870
+.L080BA0F4: .4byte gDispIo
 .L080BA0F8: .4byte 0x085E0280
 .L080BA0FC: .4byte 0x06008000
 .L080BA100: .4byte 0x0000FFE0
@@ -36968,7 +36968,7 @@ func_080BA30C: @ 0x080BA30C
     push {lr}
     movs r0, #0
     bl SetOnHBlankA
-    ldr r2, .L080BA348 @ =0x03002870
+    ldr r2, .L080BA348 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0xc0
@@ -36994,7 +36994,7 @@ func_080BA30C: @ 0x080BA30C
     pop {r0}
     bx r0
     .align 2, 0
-.L080BA348: .4byte 0x03002870
+.L080BA348: .4byte gDispIo
 .L080BA34C: .4byte 0x0000FFE0
     func_end func_080BA30C
 
@@ -37271,7 +37271,7 @@ func_080BA564: @ 0x080BA564
     adds r0, #0x50
     movs r7, #0
     strb r7, [r0]
-    ldr r5, .L080BA69C @ =0x03002870
+    ldr r5, .L080BA69C @ =gDispIo
     movs r4, #0x21
     rsbs r4, r4, #0
     adds r0, r4, #0
@@ -37405,7 +37405,7 @@ func_080BA564: @ 0x080BA564
     bx r0
     .align 2, 0
 .L080BA698: .4byte 0x086772EC
-.L080BA69C: .4byte 0x03002870
+.L080BA69C: .4byte gDispIo
 .L080BA6A0: .4byte 0x0000FFCC
 .L080BA6A4: .4byte gBg0Tm
 .L080BA6A8: .4byte gBg1Tm
@@ -37456,7 +37456,7 @@ func_080BA6D8: @ 0x080BA6D8
     movs r2, #0
     movs r3, #0
     bl func_080AA78C
-    ldr r2, .L080BA75C @ =0x03002870
+    ldr r2, .L080BA75C @ =gDispIo
     movs r0, #1
     ldrb r1, [r2, #1]
     orrs r0, r1
@@ -37491,7 +37491,7 @@ func_080BA6D8: @ 0x080BA6D8
     .align 2, 0
 .L080BA754: .4byte func_080BA3CC
 .L080BA758: .4byte 0x08CEFA40
-.L080BA75C: .4byte 0x03002870
+.L080BA75C: .4byte gDispIo
 .L080BA760: .4byte gPlayStatus
     func_end func_080BA6D8
 
@@ -37530,7 +37530,7 @@ func_080BA764: @ 0x080BA764
     asrs r7, r1, #1
     cmp r0, #0x30
     bne .L080BA810
-    ldr r3, .L080BA888 @ =0x03002870
+    ldr r3, .L080BA888 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -37583,7 +37583,7 @@ func_080BA764: @ 0x080BA764
     movs r3, #0x20
     bl func_080BD0D4
 .L080BA810:
-    ldr r3, .L080BA888 @ =0x03002870
+    ldr r3, .L080BA888 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -37644,7 +37644,7 @@ func_080BA764: @ 0x080BA764
     pop {r0}
     bx r0
     .align 2, 0
-.L080BA888: .4byte 0x03002870
+.L080BA888: .4byte gDispIo
 .L080BA88C: .4byte 0x0000FFE0
 .L080BA890: .4byte 0x0000E0FF
 .L080BA894: .4byte 0x0866F274
@@ -37655,7 +37655,7 @@ func_080BA898: @ 0x080BA898
     adds r0, #0x50
     movs r3, #0
     strb r3, [r0]
-    ldr r0, .L080BA90C @ =0x03002870
+    ldr r0, .L080BA90C @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -37710,7 +37710,7 @@ func_080BA898: @ 0x080BA898
     strb r0, [r1]
     bx lr
     .align 2, 0
-.L080BA90C: .4byte 0x03002870
+.L080BA90C: .4byte gDispIo
 .L080BA910: .4byte 0x0000FFE0
 .L080BA914: .4byte 0x0000E0FF
     func_end func_080BA898
@@ -37745,7 +37745,7 @@ func_080BA918: @ 0x080BA918
 .L080BA94C:
     ldrb r1, [r1]
     lsrs r3, r1, #1
-    ldr r0, .L080BA994 @ =0x03002870
+    ldr r0, .L080BA994 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -37780,7 +37780,7 @@ func_080BA918: @ 0x080BA918
     pop {r0}
     bx r0
     .align 2, 0
-.L080BA994: .4byte 0x03002870
+.L080BA994: .4byte gDispIo
     func_end func_080BA918
 
     thumb_func_start func_080BA998
@@ -38077,7 +38077,7 @@ func_080BABB8: @ 0x080BABB8
     push {r5, r6, r7}
     sub sp, #0xc
     str r0, [sp, #8]
-    ldr r7, .L080BAD38 @ =0x03002870
+    ldr r7, .L080BAD38 @ =gDispIo
     movs r0, #1
     ldrb r1, [r7, #1]
     orrs r0, r1
@@ -38254,7 +38254,7 @@ func_080BABB8: @ 0x080BABB8
     pop {r0}
     bx r0
     .align 2, 0
-.L080BAD38: .4byte 0x03002870
+.L080BAD38: .4byte gDispIo
 .L080BAD3C: .4byte 0x08672570
 .L080BAD40: .4byte 0x0000084C
 .L080BAD44: .4byte 0x0000FFE0
@@ -38387,7 +38387,7 @@ func_080BAE50: @ 0x080BAE50
     ldrb r0, [r0]
     cmp r0, #0
     beq .L080BAEAC
-    ldr r3, .L080BAEB8 @ =0x03002870
+    ldr r3, .L080BAEB8 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -38434,7 +38434,7 @@ func_080BAE50: @ 0x080BAE50
     pop {r0}
     bx r0
     .align 2, 0
-.L080BAEB8: .4byte 0x03002870
+.L080BAEB8: .4byte gDispIo
 .L080BAEBC: .4byte 0x0000FFE0
 .L080BAEC0: .4byte 0x0000E0FF
     func_end func_080BAE50
@@ -38515,7 +38515,7 @@ func_080BAEC4: @ 0x080BAEC4
     beq .L080BAF8C
     b .L080BAFDA
 .L080BAF5E:
-    ldr r3, .L080BAF88 @ =0x03002870
+    ldr r3, .L080BAF88 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -38537,9 +38537,9 @@ func_080BAEC4: @ 0x080BAEC4
     strb r1, [r0]
     b .L080BAFB4
     .align 2, 0
-.L080BAF88: .4byte 0x03002870
+.L080BAF88: .4byte gDispIo
 .L080BAF8C:
-    ldr r3, .L080BAFC8 @ =0x03002870
+    ldr r3, .L080BAFC8 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -38570,7 +38570,7 @@ func_080BAEC4: @ 0x080BAEC4
     bl func_080124DC
     b .L080BAFDA
     .align 2, 0
-.L080BAFC8: .4byte 0x03002870
+.L080BAFC8: .4byte gDispIo
 .L080BAFCC:
     ldr r0, [r5, #0x2c]
     movs r3, #1
@@ -39091,7 +39091,7 @@ func_080BB354: @ 0x080BB354
     strh r1, [r2]
     adds r2, #2
     adds r0, #0xa0
-    ldr r1, .L080BB4C4 @ =0x03002870
+    ldr r1, .L080BB4C4 @ =gDispIo
     ldrb r0, [r0]
     ldrh r1, [r1, #0x26]
     adds r0, r0, r1
@@ -39220,7 +39220,7 @@ func_080BB354: @ 0x080BB354
 .L080BB4B8: .4byte 0x04000014
 .L080BB4BC: .4byte 0x04000016
 .L080BB4C0: .4byte 0x04000018
-.L080BB4C4: .4byte 0x03002870
+.L080BB4C4: .4byte gDispIo
 .L080BB4C8: .4byte 0x0400001C
 .L080BB4CC: .4byte 0x0400001E
 .L080BB4D0: .4byte 0x04000050
@@ -39567,7 +39567,7 @@ func_080BB76C: @ 0x080BB76C
     movs r0, #4
     ldr r2, .L080BB7D4 @ =0x00000484
     ldr r3, .L080BB7D8 @ =0x08B90600
-    bl func_08006A34
+    bl PutSpriteExt
     adds r4, #1
     cmp r4, #3
     ble .L080BB786
@@ -39587,7 +39587,7 @@ func_080BB76C: @ 0x080BB76C
     movs r1, #8
     movs r2, #0x80
     adds r3, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
     movs r0, #0x92
     lsls r0, r0, #5
     str r0, [sp]
@@ -39595,7 +39595,7 @@ func_080BB76C: @ 0x080BB76C
     movs r1, #8
     movs r2, #0x90
     adds r3, r4, #0
-    bl func_08006A34
+    bl PutSpriteExt
     b .L080BB7F2
     .align 2, 0
 .L080BB7D0: .4byte 0x03001620
@@ -39610,7 +39610,7 @@ func_080BB76C: @ 0x080BB76C
     movs r0, #4
     movs r1, #8
     movs r2, #0x90
-    bl func_08006A34
+    bl PutSpriteExt
 .L080BB7F2:
     add sp, #4
     pop {r4, r5, r6}
@@ -39684,7 +39684,7 @@ func_080BB81C: @ 0x080BB81C
     cmp r4, #0
     bge .L080BB866
     bl EnablePalSync
-    ldr r4, .L080BB8F4 @ =0x03002870
+    ldr r4, .L080BB8F4 @ =gDispIo
     adds r3, r4, #0
     adds r3, #0x3c
     movs r1, #0x3f
@@ -39736,7 +39736,7 @@ func_080BB81C: @ 0x080BB81C
 .L080BB8E8: .4byte 0x06010000
 .L080BB8EC: .4byte gPal
 .L080BB8F0: .4byte 0x086005C4
-.L080BB8F4: .4byte 0x03002870
+.L080BB8F4: .4byte gDispIo
 .L080BB8F8:
     adds r0, r6, #0
     bl func_080BB814
@@ -39797,7 +39797,7 @@ func_080BB98C: @ 0x080BB98C
     push {r4, r5, lr}
     sub sp, #4
     adds r4, r0, #0
-    ldr r1, .L080BBA14 @ =0x03002870
+    ldr r1, .L080BBA14 @ =gDispIo
     movs r2, #4
     rsbs r2, r2, #0
     adds r0, r2, #0
@@ -39856,7 +39856,7 @@ func_080BB98C: @ 0x080BB98C
     pop {r0}
     bx r0
     .align 2, 0
-.L080BBA14: .4byte 0x03002870
+.L080BBA14: .4byte gDispIo
 .L080BBA18: .4byte 0x085ECDF4
 .L080BBA1C: .4byte 0x085ECE14
 .L080BBA20: .4byte 0x0600C000
@@ -39875,7 +39875,7 @@ func_080BBA3C: @ 0x080BBA3C
     ldr r2, [r4, #0x2c]
     adds r2, #1
     str r2, [r4, #0x2c]
-    ldr r0, .L080BBAB4 @ =0x03002870
+    ldr r0, .L080BBAB4 @ =gDispIo
     mov ip, r0
     mov r3, ip
     adds r3, #0x3c
@@ -39927,7 +39927,7 @@ func_080BBA3C: @ 0x080BBA3C
     pop {r0}
     bx r0
     .align 2, 0
-.L080BBAB4: .4byte 0x03002870
+.L080BBAB4: .4byte gDispIo
 .L080BBAB8: .4byte 0x0000FFE0
 .L080BBABC: .4byte 0x0000E0FF
 .L080BBAC0: .4byte gBg3Tm
@@ -39950,7 +39950,7 @@ func_080BBAC4: @ 0x080BBAC4
     movs r2, #0xe0
     lsls r2, r2, #8
     bl func_080AACD8
-    ldr r2, .L080BBB28 @ =0x03002870
+    ldr r2, .L080BBB28 @ =gDispIo
     movs r0, #0x3f
     ldrb r1, [r2, #0xd]
     ands r0, r1
@@ -39976,7 +39976,7 @@ func_080BBAC4: @ 0x080BBAC4
 .L080BBB1C: .4byte 0x06008000
 .L080BBB20: .4byte gBg0Tm
 .L080BBB24: .4byte 0x0860029C
-.L080BBB28: .4byte 0x03002870
+.L080BBB28: .4byte gDispIo
 .L080BBB2C: .4byte 0x03001620
     func_end func_080BBAC4
 
@@ -39987,7 +39987,7 @@ func_080BBB30: @ 0x080BBB30
     ldr r2, [r4, #0x2c]
     adds r2, #1
     str r2, [r4, #0x2c]
-    ldr r0, .L080BBB98 @ =0x03002870
+    ldr r0, .L080BBB98 @ =gDispIo
     mov ip, r0
     mov r3, ip
     adds r3, #0x3c
@@ -40034,7 +40034,7 @@ func_080BBB30: @ 0x080BBB30
     pop {r0}
     bx r0
     .align 2, 0
-.L080BBB98: .4byte 0x03002870
+.L080BBB98: .4byte gDispIo
 .L080BBB9C: .4byte 0x0000FFE0
 .L080BBBA0: .4byte 0x0000E0FF
     func_end func_080BBB30
@@ -40060,7 +40060,7 @@ func_080BBBB8: @ 0x080BBBB8
     movs r1, #0x1e
     movs r2, #0
     bl StartBgmExt
-    ldr r6, .L080BBC4C @ =0x03002870
+    ldr r6, .L080BBC4C @ =gDispIo
     movs r0, #4
     rsbs r0, r0, #0
     ldrb r1, [r6, #0xc]
@@ -40122,7 +40122,7 @@ func_080BBBB8: @ 0x080BBBB8
     pop {r0}
     bx r0
     .align 2, 0
-.L080BBC4C: .4byte 0x03002870
+.L080BBC4C: .4byte gDispIo
 .L080BBC50: .4byte 0x085E9D2C
 .L080BBC54: .4byte func_080BB76C
 .L080BBC58: .4byte 0x03001620
@@ -40178,7 +40178,7 @@ func_080BBC80: @ 0x080BBC80
     bl func_080AACD8
     movs r0, #1
     bl EnableBgSync
-    ldr r3, .L080BBD1C @ =0x03002870
+    ldr r3, .L080BBD1C @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -40218,7 +40218,7 @@ func_080BBC80: @ 0x080BBC80
 .L080BBD10: .4byte 0x08CEF080
 .L080BBD14: .4byte 0x06008000
 .L080BBD18: .4byte 0x086756A0
-.L080BBD1C: .4byte 0x03002870
+.L080BBD1C: .4byte gDispIo
 .L080BBD20: .4byte 0x0000FFE0
 .L080BBD24: .4byte 0x0000E0FF
     func_end func_080BBC80
@@ -40252,7 +40252,7 @@ func_080BBD28: @ 0x080BBD28
     bl func_080AACD8
     movs r0, #1
     bl EnableBgSync
-    ldr r3, .L080BBDC4 @ =0x03002870
+    ldr r3, .L080BBDC4 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -40292,7 +40292,7 @@ func_080BBD28: @ 0x080BBD28
 .L080BBDB8: .4byte 0x08CEF07C
 .L080BBDBC: .4byte 0x06008000
 .L080BBDC0: .4byte 0x08676BB8
-.L080BBDC4: .4byte 0x03002870
+.L080BBDC4: .4byte gDispIo
 .L080BBDC8: .4byte 0x0000FFE0
 .L080BBDCC: .4byte 0x0000E0FF
     func_end func_080BBD28
@@ -40743,7 +40743,7 @@ func_080BC104: @ 0x080BC104
     mov r0, sp
     bl CpuSetFast
     bl EnablePalSync
-    ldr r2, .L080BC160 @ =0x03002870
+    ldr r2, .L080BC160 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r2, #1]
@@ -40767,7 +40767,7 @@ func_080BC104: @ 0x080BC104
     .align 2, 0
 .L080BC158: .4byte gPal
 .L080BC15C: .4byte 0x01000008
-.L080BC160: .4byte 0x03002870
+.L080BC160: .4byte gDispIo
     func_end func_080BC104
 
     thumb_func_start func_080BC164
@@ -40775,7 +40775,7 @@ func_080BC164: @ 0x080BC164
     push {r4, r5, r6, r7, lr}
     sub sp, #8
     adds r5, r0, #0
-    ldr r7, .L080BC1F8 @ =0x03002870
+    ldr r7, .L080BC1F8 @ =gDispIo
     adds r1, r7, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -40841,7 +40841,7 @@ func_080BC164: @ 0x080BC164
     pop {r0}
     bx r0
     .align 2, 0
-.L080BC1F8: .4byte 0x03002870
+.L080BC1F8: .4byte gDispIo
 .L080BC1FC: .4byte 0x03001620
 .L080BC200: .4byte 0xFFFFFE1E
 .L080BC204: .4byte 0x06017000
@@ -40991,7 +40991,7 @@ func_080BC30C: @ 0x080BC30C
     push {r7}
     sub sp, #0x14
     mov r8, r0
-    ldr r7, .L080BC434 @ =0x03002870
+    ldr r7, .L080BC434 @ =gDispIo
     movs r0, #2
     rsbs r0, r0, #0
     ldrb r1, [r7, #1]
@@ -41122,7 +41122,7 @@ func_080BC30C: @ 0x080BC30C
     pop {r0}
     bx r0
     .align 2, 0
-.L080BC434: .4byte 0x03002870
+.L080BC434: .4byte gDispIo
 .L080BC438: .4byte gBg0Tm
 .L080BC43C: .4byte gBg1Tm
 .L080BC440: .4byte gBg2Tm
@@ -41142,7 +41142,7 @@ func_080BC30C: @ 0x080BC30C
 
     thumb_func_start func_080BC474
 func_080BC474: @ 0x080BC474
-    ldr r2, .L080BC490 @ =0x03002870
+    ldr r2, .L080BC490 @ =gDispIo
     movs r0, #1
     ldrb r1, [r2, #1]
     orrs r0, r1
@@ -41157,7 +41157,7 @@ func_080BC474: @ 0x080BC474
     strb r0, [r2, #1]
     bx lr
     .align 2, 0
-.L080BC490: .4byte 0x03002870
+.L080BC490: .4byte gDispIo
     func_end func_080BC474
 
     thumb_func_start func_080BC494
@@ -41179,7 +41179,7 @@ func_080BC494: @ 0x080BC494
     adds r6, r0, #0
     cmp r6, #0xf
     bgt .L080BC4E0
-    ldr r4, .L080BC564 @ =0x03002870
+    ldr r4, .L080BC564 @ =gDispIo
     adds r2, r4, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -41227,7 +41227,7 @@ func_080BC494: @ 0x080BC494
     bl TmFill
     movs r0, #2
     bl EnableBgSync
-    ldr r2, .L080BC564 @ =0x03002870
+    ldr r2, .L080BC564 @ =gDispIo
     adds r1, r2, #0
     adds r1, #0x3c
     movs r0, #0x3f
@@ -41259,7 +41259,7 @@ func_080BC494: @ 0x080BC494
     bx r0
     .align 2, 0
 .L080BC560: .4byte 0x0867733C
-.L080BC564: .4byte 0x03002870
+.L080BC564: .4byte gDispIo
 .L080BC568: .4byte gBg1Tm
 .L080BC56C: .4byte gPal
     func_end func_080BC494
@@ -41355,7 +41355,7 @@ func_080BC5F4: @ 0x080BC5F4
     ldr r2, .L080BC694 @ =0x01001000
     mov r0, sp
     bl CpuSetFast
-    ldr r3, .L080BC698 @ =0x03002870
+    ldr r3, .L080BC698 @ =gDispIo
     movs r1, #4
     rsbs r1, r1, #0
     adds r0, r1, #0
@@ -41418,7 +41418,7 @@ func_080BC5F4: @ 0x080BC5F4
 .L080BC68C: .4byte 0x085EE02C
 .L080BC690: .4byte 0x0600C000
 .L080BC694: .4byte 0x01001000
-.L080BC698: .4byte 0x03002870
+.L080BC698: .4byte gDispIo
 .L080BC69C: .4byte 0x0000FFE0
 .L080BC6A0: .4byte 0x0000E0FF
 .L080BC6A4: .4byte 0x08CEF594
@@ -41491,7 +41491,7 @@ func_080BC6A8: @ 0x080BC6A8
     adds r1, r1, r6
     bl __divsi3
     adds r7, r0, #0
-    ldr r3, .L080BC784 @ =0x03002870
+    ldr r3, .L080BC784 @ =gDispIo
     adds r2, r3, #0
     adds r2, #0x3c
     movs r0, #0x3f
@@ -41532,7 +41532,7 @@ func_080BC6A8: @ 0x080BC6A8
     b .L080BC78A
     .align 2, 0
 .L080BC780: .4byte gBg3Tm
-.L080BC784: .4byte 0x03002870
+.L080BC784: .4byte gDispIo
 .L080BC788:
     movs r0, #0
 .L080BC78A:
@@ -41596,7 +41596,7 @@ func_080BC7E4: @ 0x080BC7E4
     str r0, [r5, #0x3c]
     bl func_080BC5E0
     str r0, [r5, #0x34]
-    ldr r7, .L080BC8A8 @ =0x03002870
+    ldr r7, .L080BC8A8 @ =gDispIo
     movs r2, #4
     rsbs r2, r2, #0
     adds r0, r2, #0
@@ -41681,7 +41681,7 @@ func_080BC7E4: @ 0x080BC7E4
     bx r0
     .align 2, 0
 .L080BC8A4: .4byte 0x08CEF630
-.L080BC8A8: .4byte 0x03002870
+.L080BC8A8: .4byte gDispIo
 .L080BC8AC: .4byte gBg0Tm
 .L080BC8B0: .4byte 0x03001620
 .L080BC8B4: .4byte 0x0000FFE0
@@ -41832,7 +41832,7 @@ func_080BC9B8: @ 0x080BC9B8
     str r3, [r4, #0x2c]
     cmp r3, #0x40
     bgt .L080BC9FA
-    ldr r0, .L080BCA64 @ =0x03002870
+    ldr r0, .L080BCA64 @ =gDispIo
     mov ip, r0
     adds r0, #0x3c
     movs r1, #0x3f
@@ -41878,7 +41878,7 @@ func_080BC9B8: @ 0x080BC9B8
     asrs r0, r0, #3
     movs r3, #8
     subs r3, r3, r0
-    ldr r0, .L080BCA64 @ =0x03002870
+    ldr r0, .L080BCA64 @ =gDispIo
     mov ip, r0
     mov r2, ip
     adds r2, #0x3c
@@ -41912,7 +41912,7 @@ func_080BC9B8: @ 0x080BC9B8
     pop {r0}
     bx r0
     .align 2, 0
-.L080BCA64: .4byte 0x03002870
+.L080BCA64: .4byte gDispIo
 .L080BCA68: .4byte gBg0Tm
     func_end func_080BC9B8
 
@@ -41948,7 +41948,7 @@ func_080BCA94: @ 0x080BCA94
     str r3, [r0, #0x2c]
     cmp r3, #0x80
     bgt .L080BCADC
-    ldr r0, .L080BCAD8 @ =0x03002870
+    ldr r0, .L080BCAD8 @ =gDispIo
     mov ip, r0
     adds r0, #0x3c
     movs r1, #0x3f
@@ -41977,7 +41977,7 @@ func_080BCA94: @ 0x080BCA94
     strb r2, [r0]
     b .L080BCAE0
     .align 2, 0
-.L080BCAD8: .4byte 0x03002870
+.L080BCAD8: .4byte gDispIo
 .L080BCADC:
     bl Proc_Break
 .L080BCAE0:
@@ -42605,7 +42605,7 @@ func_080BCE60: @ 0x080BCE60
     mov r1, sl
     adds r2, r5, #0
     adds r3, r4, #0
-    bl func_08003388
+    bl SetObjAffine
     ldr r1, [sp, #4]
     ldrh r1, [r1, #0x2c]
     lsls r0, r1, #9
@@ -42624,7 +42624,7 @@ func_080BCE60: @ 0x080BCE60
     movs r0, #4
     mov r1, r8
     mov r2, sb
-    bl func_08006A34
+    bl PutSpriteExt
     ldr r1, [sp, #4]
     ldrh r0, [r1, #0x2e]
     adds r0, #1
@@ -43361,7 +43361,7 @@ func_080BD4F4: @ 0x080BD4F4
     str r0, [sp]
     movs r0, #4
     adds r2, r5, #0
-    bl func_08006A34
+    bl PutSpriteExt
 .L080BD534:
     ldr r0, [r4, #0x34]
     adds r0, #1

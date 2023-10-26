@@ -21,6 +21,6 @@ struct SpriteEnt
 extern struct SpriteEnt gSpriteList[SPRITE_COUNT];
 extern struct SpriteEnt gSpriteLayers[SPRITE_LAYER_COUNT];
 
-void func_08006A34(i32 layer, i32 x_oam1, i32 y_oam0, u16 const * object, i32 oam2);
+void PutSpriteExt(i32 layer, i32 x_oam1, i32 y_oam0, u16 const * object, i32 oam2);
 
 #endif // SPRITE_H

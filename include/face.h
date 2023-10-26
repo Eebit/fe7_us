@@ -45,9 +45,9 @@ struct FaceConfigEnt
 
 extern struct FaceConfigEnt gFaceConfig[FACE_COUNT];
 
-Proc * func_08007BCC(i32 slot, i32 fid, i32 x, i32 y, i32 disp);
-void func_0800751C(Proc *);
+Proc * StartFace2(i32 slot, i32 fid, i32 x, i32 y, i32 disp);
+void StartFaceFadeIn(Proc *);
 void StartFaceFadeOut(Proc *);
-void func_08006D50(i32);
+void EndFaceById(i32);
 
 #endif // FACE_H
